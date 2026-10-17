@@ -1,0 +1,126 @@
+# K: Opća načela državne uprave
+M| Što su tijela državne uprave dužna? | *Rad obavljati prema pravilima uredskog poslovanja | *Po službenoj dužnosti pribaviti podatke iz službenih evidencija | Obvezati građane da sami dostave sve podatke | Uvijek isključiti javnost || Tijela sama pribavljaju podatke iz očevidnika.
+T| Javnost rada tijela državne uprave može se isključiti samo iznimno, u slučajevima propisanim zakonom ili pravnom stečevinom EU. | T || Rad je javan, a isključenje je iznimka.
+S| Tko nadoknađuje štetu nastalu nezakonitim ili nepravilnim radom državne uprave? | *Republika Hrvatska | Službenik osobno | Čelnik tijela | Sindikat || Za štetu odgovara RH.
+# K: Uredsko poslovanje
+S| Tko uređuje pravila uredskog poslovanja? | *Vlada RH uredbom | Sabor zakonom | Ministar pravilnikom | Svaki čelnik za svoje tijelo || Uredba o uredskom poslovanju; brojčane oznake propisuje ministar naputkom.
+S| U kojem se obliku vode evidencije uredskog poslovanja? | *U elektroničkom obliku | Isključivo na papiru | Po izboru službenika | U obliku knjige || Evidencije se vode u informacijskom sustavu.
+M| Tko je dužan primjenjivati propise o uredskom poslovanju? | *Tijela državne uprave | *Tijela i službe JLP(R)S | *Pravne osobe s javnim ovlastima | Trgovačka društva općenito | Političke stranke || Ustanove i trgovačka društva općenito nisu obveznici.
+T| Javnopravna tijela službeno dopisivanje obavljaju primarno elektroničkim putem. | T || Elektroničko dopisivanje je pravilo.
+P| Spojite pojam s definicijom. | Podnesak = pismeno kojim se stranka obraća javnopravnom tijelu ; Akt = pismeno kojim tijelo odlučuje ili službeno dopisuje ; Spis (predmet) = skup pismena o istom pitanju ; Službena bilješka = zapis telefonskih razgovora, usmenih uputa i sl. || Temeljni pojmovi uredskog poslovanja.
+S| Što je prilog? | *Pisani sastavak, slikovni prikaz ili fizički predmet priložen radi nadopune, pojašnjenja ili dokazivanja | Svaki fizički predmet bez obzira na svrhu | Samo potpis | Omotnica pismena || Bitna je svrha nadopune, pojašnjenja ili dokazivanja.
+S| Što je pisarnica? | *Posebna ustrojstvena jedinica za uredsko poslovanje, primanje i pregled pismena | Jedinica koja prima stranke | Pismohrana | Ured čelnika || Pisarnica obavlja većinu uredskog poslovanja.
+F| Brojčana oznaka akta sastoji se od [klasifikacijske oznake/OIB-a/datuma] i [urudžbenog broja/potpisa/pečata]. || KLASA + URBROJ.
+P| Spojite dio klasifikacijske oznake UP/I-133-02/13-01/123 sa značenjem. | UP/I = prvostupanjski upravni postupak ; 133-02 = upravno područje i djelatnost ; 13 = godina otvaranja predmeta ; 01 = broj dosjea ; 123 = redni broj predmeta || Struktura klasifikacijske oznake.
+S| Iz čega se sastoji urudžbeni broj? | *Iz brojčane oznake tijela i rednog broja pismena | Iz godine i OIB-a stranke | Iz klase i datuma | Iz imena službenika || Prema potrebi može sadržavati i oznaku ustrojstvene jedinice, službenika i godinu.
+T| Javnopravno tijelo smije u jednoj godini osnovati dva predmeta iste klasifikacijske oznake različitog sadržaja. | N || Pod jednom klasifikacijskom oznakom smije biti samo jedan predmet.
+S| Tko donosi plan klasifikacijskih oznaka? | *Čelnik javnopravnog tijela | Vlada | Ministar uprave | Pisarnica || Plan se donosi nakon svake promjene djelokruga.
+S| S kojim se datumom evidentira akt? | *S datumom kad je nastao | S datumom kad je zaprimljen | S datumom otpreme | S datumom potpisa stranke || Akt – datum nastanka, podnesak – datum zaprimanja.
+S| Kada se predmeti dostavljaju u rad? | *Istog dana, a najkasnije prvog sljedećeg radnog dana | U roku od 5 radnih dana | U roku od 8 dana | Kad čelnik odluči || Iznimke su tajne pošiljke, natječaji i javna nabava.
+S| Koju pošiljku službenik pisarnice NE smije otvoriti? | *Pošiljku naslovljenu na čelnika javnopravnog tijela | Pošiljku naslovljenu na tijelo | Pošiljku naslovljenu na službenika | Pošiljku stranke || Pošiljke naslovljene na čelnika ne otvaraju se u pisarnici.
+S| Što se radi s pošiljkom za koju postoji sumnja da je opasna? | *Ne otvara se, odlaže se na sigurno, sastavlja se službena bilješka i obavještava čelnik | Otvara se pažljivo | Vraća se pošiljatelju | Baca se || Postupak sa sumnjivom pošiljkom.
+M| Što se NE evidentira u informacijskom sustavu uredskog poslovanja? | *Čestitke | *Oglasi | *Razglednice | Žalbe | Zahtjevi stranaka || Evidentira se samo službeno dopisivanje.
+S| Što je OCR? | *Pretvaranje elektroničke slike pismena u tekst koji se može pretraživati | Digitalni potpis | Bar kod | Vrsta pečata || Optičko prepoznavanje teksta.
+M| Što je definirano Uredbom (EU) 910/2014 (eIDAS)? | *Kvalificirani elektronički pečat | *Kvalificirani elektronički potpis | *Pouzdani popis | Urudžbeni broj || Uredba o elektroničkoj identifikaciji i uslugama povjerenja.
+T| Akt u elektroničkom obliku ovjerava se istodobno i elektroničkim potpisom i elektroničkim pečatom. | N || Akt s elektroničkim potpisom ne mora imati i pečat; pečat služi kad potpis nije potreban.
+F| Pečat se na akt u fizičkom obliku otiskuje s [lijeve/desne] strane potpisa, jednim dijelom preko naziva službene dužnosti i potpisa. || Pečat ide lijevo od potpisa.
+P| Spojite oznaku na aktu s njezinom uporabom. | »svima« = raspis istovrsnim tijelima ; »O tome obavijest:« = dostava drugim primateljima radi obavijesti ; »DOSTAVITI:« = akt s uputom o pravnom lijeku ; »Prilozi:« = popis priloga ispod potpisa lijevo || Oznake dostave.
+M| Kakav mora biti tekst akta? | *Jasan, sažet i čitak | *S općepoznatim pokratama | *Propis se prvi put navodi punim nazivom i glasilom | Bez ikakvih pokrata | Uvijek s punim nazivom propisa || Nakon prvog navođenja propis se može pokratiti.
+S| Gdje se na aktu navodi oznaka »PREDMET:«? | *S lijeve strane, ispod adrese primatelja | S desne strane, iznad zaglavlja | U podnožju | Ispod potpisa || Adresa primatelja je desno, PREDMET lijevo ispod nje.
+# K: Natpisne ploče, zaglavlja, pečat
+S| S koje se strane glavnog ulaza ističe natpisna ploča tijela državne uprave? | *S desne strane | S lijeve strane | Iznad ulaza | Po izboru čelnika || Lijevo samo ako desno nema mjesta.
+T| Kad su tijelo državne uprave i tijelo JLP(R)S u istoj zgradi, ploča tijela državne uprave ide lijevo. | N || Državna uprava ostaje desno, a JLP(R)S ide lijevo.
+P| Spojite natpisnu ploču s dimenzijama. | Tijela državne uprave i JLS = 60 × 40 cm ; Mjesni odbor, gradski kotar, gradska četvrt = 45 × 25 cm ; Dvojezična ploča iznimno = 70 × 50 cm || Dimenzije natpisnih ploča.
+M| Kako izgleda natpisna ploča? | *Staklena, četverokutna, s uskim zlatnim rubom | *Tekst velikim zlatnim slovima na crnoj podlozi | *Pismo »helvetika« | Tekst crnim slovima na bijeloj podlozi | Okrugla ploča || Grb RH tiska se u prirodnim bojama.
+S| Gdje se stavlja grb RH na natpisnoj ploči? | *Na sredini iznad naziva »Republika Hrvatska« | Ispod naziva | Lijevo od naziva | U donjem desnom kutu || Grb je iznad naziva.
+T| Za natpisnu ploču na zgradi koja je kulturno dobro treba pribaviti obvezujuće mišljenje tijela za zaštitu kulturnih dobara. | T || Mišljenje je obvezujuće.
+S| Prema kojem se zakonu izrađuju dvojezične natpisne ploče? | *Zakonu o uporabi jezika i pisma nacionalnih manjina | Zakonu o strancima | Ustavnom zakonu o Ustavnom sudu | Zakonu o lokalnoj samoupravi || Hrvatski jezik i latinica idu na prvo mjesto.
+P| Spojite pojam s definicijom. | Pečat = gumeni, za otiskivanje ; Žig = metalni, za utiskivanje || Razlika pečata i žiga.
+S| Koliki je standardni promjer pečata s grbom RH? | *38 mm | 25 mm | 30 mm | 18 mm || 25 i 18 mm samo kad je 38 nepodesno; 30 mm za Zavod za platni promet.
+T| Korisnik smije imati samo jedan pečat i jedan žig s grbom RH. | N || Može ih imati više; broj određuje čelnik.
+S| Gdje se stavlja redni broj kad korisnik ima više pečata istog promjera? | *Iznad grba RH | Ispod grba | Na rubu | Na poleđini || Sadržaj pečata ispisuje se u koncentričnim krugovima oko grba.
+T| Pečat s grbom RH nikada se ne smije koristiti izvan službenih prostorija. | N || Iznimno smije, kad se službena radnja obavlja izvan prostorija.
+# K: Upravne pristojbe
+S| Tko propisuje Tarifu upravnih pristojbi? | *Vlada RH uredbom | Sabor zakonom | Ministar financija pravilnikom | Svaka jedinica za sebe || Tarifu propisuje Vlada uredbom.
+S| Tko je pristojbeni obveznik? | *Osoba na čiji se zahtjev pokreće postupak | Tijelo koje rješava | Svaki svjedok | Država || Pristojbu plaća onaj tko traži akt.
+S| Kad više obveznika traži isti akt, kakva je obveza plaćanja? | *Solidarna | Svatko plaća polovicu | Plaća samo prvi | Nitko ne plaća || Iznimka: kod Tarife općih pristojbi plaća se onoliko puta koliko je podnositelja.
+T| Kad se jednim zahtjevom traži više akata, smatra se da je predan jedan zahtjev. | N || Smatra se da je predano onoliko zahtjeva koliko se akata izdaje.
+S| Kada nastaje pristojbena obveza? | *U trenutku zaprimanja zahtjeva | U trenutku donošenja rješenja | Nakon pravomoćnosti | Na kraju godine || Iznimke vrijede za posebna područja i za odbijene zahtjeve.
+S| Ako se zahtjevu NE udovoljava, kada nastaje pristojbena obveza? | *U trenutku donošenja odluke o zahtjevu, prema Tarifi općih pristojbi | Pri zaprimanju | Nikad | Pri žalbi || Za odbijene zahtjeve obveza nastaje donošenjem odluke.
+S| Kako se zaokružuje osnovica pristojbe propisane u postotku? | *Na cijelu deseticu: do 5,00 eura niže, iznad 5,00 eura više | Uvijek na višu deseticu | Na cijeli euro | Ne zaokružuje se || Pravilo zaokruživanja osnovice.
+S| U kojem se roku podnosi zahtjev za povrat više plaćene pristojbe? | *90 dana | 30 dana | 15 dana | Godinu dana || Odlučuje tijelo za čiji je rad pristojba plaćena.
+T| Protiv rješenja Ministarstva financija o povratu pristojbe od pravne osobe s javnim ovlastima dopuštena je žalba. | N || Žalba nije dopuštena, ali je moguć upravni spor.
+M| Tko je oslobođen plaćanja upravnih pristojbi? | *Tražitelji međunarodne zaštite | *Stipendisti koji dolaze na školovanje u RH | *Volonteri u neprofitnim udrugama | Stranci koji dolaze raditi u RH | Sve pravne osobe || Stranci koji dolaze raditi nisu oslobođeni.
+M| Za što se NE plaćaju upravne pristojbe? | *Predstavke i pritužbe tijelima | *Zahtjevi za pristup informacijama | *Molbe za pomilovanje | *Izdavanje osobne iskaznice | Izdavanje dozvole bez oslobođenja | Svaki zahtjev pravne osobe || Popis predmetnih oslobođenja.
+S| Do koje dobi djeca ne plaćaju pristojbu za vizu? | *12 godina | 10 godina | 14 godina | 18 godina || Djeca do 12 godina.
+T| Strani državljani s boravkom u RH izjednačeni su s hrvatskim državljanima u plaćanju pristojbi, osim ako međunarodni ugovor ne određuje drukčije. | T || Pravilo izjednačavanja.
+# K: ZUP – opća pravila
+S| Kakav je ZUP propis? | *Opći propis koji se uvijek primjenjuje u upravnim stvarima | Poseban propis samo za gradnju | Podzakonski akt | Propis koji vrijedi samo za ministarstva || Posebni zakoni mogu odstupiti samo ako nije protivno temeljnim odredbama ZUP-a.
+M| Koja javnopravna tijela postupaju po ZUP-u? | *Tijela državne uprave | *Tijela JLP(R)S | *Pravne osobe s javnim ovlastima (npr. HZZO, HZMO) | Političke stranke | Udruge građana || Primjeri pravnih osoba s javnim ovlastima: Hrvatske šume, HZMO, HZZO.
+S| Što omogućuje jedinstveno upravno mjesto? | *Podnošenje svih zahtjeva na jednom mjestu, uz prosljeđivanje nadležnim tijelima | Vođenje cijelog postupka na jednom mjestu | Odlučivanje o svim zahtjevima | Ukidanje nadležnosti tijela || Ne mijenja stvarnu i mjesnu nadležnost tijela.
+M| Tko može zastupati stranku u upravnom postupku? | *Zakonski zastupnik | *Privremeni zastupnik | *Opunomoćenik | *Zajednički predstavnik | Osoba koja se bavi nadripisarstvom | Službena osoba koja vodi postupak || Opunomoćenik može biti svaka potpuno poslovno sposobna osoba, osim nadripisara.
+S| Tko NE može poduzimati radnje u upravnom postupku? | *Osoba lišena poslovne sposobnosti | Potpuno poslovno sposobna osoba | Dijete starije od 14 godina kad mu zakon to priznaje | Opunomoćenik || Ograničeno sposobni mogu kad im zakon to priznaje.
+P| Spojite vrstu stranke s primjerom. | Aktivna stranka = investitor koji traži građevinsku dozvolu ; Pasivna stranka = kupac nekretnine u postupku utvrđivanja poreza ; Stranka s pravom sudjelovanja = poslodavac kod utvrđivanja ozljede na radu || Vrste stranaka prema položaju.
+M| Tko NIJE stranka u upravnom postupku? | *Kolegijalno tijelo koje odlučuje o upravnoj stvari | *Pravna osoba koja rješava upravnu stvar | Tijelo državne uprave na čiji je zahtjev postupak pokrenut | Tijelo bez pravne osobnosti || Tijelo koje odlučuje nije stranka.
+M| Koji su uvjeti za službenu osobu koja rješava upravne stvari? | *Odgovarajuća stručna sprema | *Iskustvo | *Položen državni ispit | Pravosudni ispit | Članstvo u komori || Ako nema ovlaštene osobe, rješava čelnik tijela.
+S| Kako odlučuje kolegijalno tijelo, ako nije drukčije propisano? | *Većinom glasova svih članova | Većinom nazočnih | Jednoglasno | Odlukom predsjednika || Pravilo za kolegijalna tijela.
+# K: ZUP – nadležnost
+S| Što je nadležnost? | *Pravo i dužnost tijela voditi postupak u upravnoj stvari i donijeti rješenje | Pravo stranke na žalbu | Ovlast suda | Popis službenika || Rješenje nenadležnog tijela poništava se.
+P| Spojite vrstu nadležnosti s načinom određivanja. | Stvarna nadležnost = zakonom o upravnom području, inače po naravi stvari ; Mjesna nadležnost = propisima o upravno-teritorijalnoj podjeli || Dvije vrste nadležnosti.
+P| Kako se određuje mjesna nadležnost kad nije propisana? | Nekretnine = mjesto gdje se nekretnina nalazi ; Djelatnost stranke = sjedište ili mjesto obavljanja djelatnosti ; Brodovi i zrakoplovi = matična luka ; Ostale stvari = prebivalište fizičke osobe || Pravila supsidijarne mjesne nadležnosti.
+T| Mjesna nadležnost za pokretnine određuje se prema prebivalištu posjednika pokretnine. | N || To nije propisani kriterij.
+T| Nadležnost se može promijeniti dogovorom tijela i stranke. | N || Stvarna i mjesna nadležnost ne mogu se mijenjati dogovorom.
+S| Što smije drugo stvarno nadležno tijelo kad postoji opasnost od odgode? | *Poduzeti hitnu radnju izvan svog područja i odmah obavijestiti mjesno nadležno tijelo | Preuzeti cijeli predmet | Ništa | Donijeti konačno rješenje || Hitna radnja uz obavijest nadležnom tijelu.
+P| Spojite vrstu sukoba nadležnosti s opisom. | Pozitivan sukob = dva tijela smatraju da su nadležna ; Negativan sukob = dva tijela smatraju da nisu nadležna || Sukob nadležnosti.
+S| Tko odlučuje o sukobu nadležnosti između javnopravnih tijela? | *Tijelo drugog stupnja, a ako ga nema, tijelo državne uprave za opću upravu | Ustavni sud | Stranka | Vlada uvijek || Sukob između TDU i JLS-a rješava upravni sud.
+T| Protiv odluke o sukobu nadležnosti može se izjaviti žalba. | N || Ne može se izjaviti žalba niti pokrenuti upravni spor.
+# K: ZUP – tijek postupka
+S| Kada se postupak na zahtjev stranke smatra pokrenutim? | *U trenutku predaje urednog zahtjeva | Kad tijelo odluči | Kad stranka plati pristojbu | Kad se zakaže rasprava || Neuredan zahtjev ne pokreće postupak.
+S| Kada se postupak po službenoj dužnosti smatra pokrenutim? | *Kad službena osoba poduzme bilo koju radnju sa svrhom vođenja postupka | Kad stranka podnese predstavku | Kad čelnik potpiše nalog | Kad se izda rješenje || Primjer: poziv svjedoku ili očevid.
+F| Ako nema uvjeta za pokretanje postupka po predstavci, podnositelj se obavještava najkasnije u roku od [30/15/8] dana, a prigovor može izjaviti u roku od [8/15/30] dana. || Obavijest u 30 dana, prigovor u 8 dana.
+M| Kada se postupak može pokrenuti javnom objavom? | *Kad su stranke nepoznate | *Kad je to propisano zakonom | Uvijek kad tijelo želi | Kad stranka ne plati pristojbu || Objava ide u službenom glasilu ili sredstvima javnog priopćivanja.
+M| Koja su tri kumulativna uvjeta za spajanje upravnih stvari? | *Prava ili obveze imaju istu pravnu osnovu | *Isto ili slično činjenično stanje | *Tijelo je stvarno i mjesno nadležno za sve | Iste stranke | Isti službenik || Spaja se zaključkom.
+T| Stranka može odustati od zahtjeva samo ako navede razloge. | N || Može odustati bez navođenja razloga; donosi se rješenje o obustavi.
+M| Kada se postupak nastavlja unatoč odustanku stranke? | *Kad je to u javnom interesu | *Kad to zahtijeva protivna stranka | Kad tijelo želi uštedjeti | Nikad || Dva razloga za nastavak.
+S| Do kada stranka može izmijeniti zahtjev? | *Do donošenja prvostupanjskog rješenja, ako se temelji na istom činjeničnom stanju | Do pravomoćnosti | Do žalbe | Bilo kada || Isto činjenično stanje znači da nije potreban novi ispitni postupak.
+M| Kada se rješenje smije donijeti bez prethodnog izjašnjavanja stranke? | *Kad se usvaja zahtjev stranke | *Kad odluka nema negativan učinak na stranku | *Kad je tako propisano zakonom | Kad se službenik žuri | Kad stranka ne dođe na prvi poziv || Izjašnjavanje je inače bitan uvjet zakonitog rješenja.
+P| Spojite smrt stranke s ishodom postupka. | Umre podnositelj zahtjeva za državljanstvo = postupak se obustavlja ; Umre vlasnik nekretnine u izvlaštenju = postupak se nastavlja || Ishod ovisi o naravi upravne stvari.
+# K: Izvršnost i izvršenje
+M| Kada je prvostupanjsko rješenje izvršno? | *Istekom roka za žalbu ako žalba nije izjavljena | *Dostavom stranci ako žalba nema odgodni učinak | Danom donošenja | Protekom roka za žalbu ako se stranka odrekla žalbe || Odricanje od žalbe samo po sebi čini rješenje izvršnim, bez čekanja roka.
+S| Kada postaje izvršno drugostupanjsko rješenje kojim se rješava upravna stvar? | *Dostavom stranci | Istekom 15 dana | Danom donošenja | Pravomoćnošću presude || Drugostupanjsko rješenje je izvršno dostavom.
+S| Koji je opći rok zastare izvršenja rješenja? | *5 godina od izvršnosti | 3 godine | Godinu dana | 10 godina || Posebni zakoni mogu propisati drukčije.
+T| Izvršenje se provodi sredstvima koja su najblaža za izvršenika, a dovode do cilja. | T || Načelo razmjernosti.
+M| Na što ima pravo izvršenik kad je izvršeno rješenje poništeno ili izmijenjeno u njegovu korist? | *Povrat u prijašnje stanje | *Naknadu stvarne štete | Javnu ispriku | Naknadu izmakle dobiti | Zadovoljštinu || Izvršenik ima pravo na povrat u prijašnje stanje ili naknadu stvarne štete.
+M| Protiv čega se može uložiti žalba na rješenje o izvršenju? | *Vremena izvršenja | *Mjesta izvršenja | *Načina izvršenja | Troška izvršenja | Same obveze || Žalba nema odgodni učinak.
+M| Kako se prisilno izvršavaju nenovčane obveze? | *Novčanom kaznom | *Putem trećih osoba | *Neposrednom prisilom | Zatvorom | Oduzimanjem putovnice || Neposredna prisila je zadnje sredstvo.
+S| Kada se izvršenje smije provoditi noću ili neradnim danom? | *Samo kod opasnosti od odgode ili hitnih mjera zaštite života, zdravlja ili imovine, uz pisani nalog | Uvijek | Nikada | Na zahtjev predlagatelja || Inače se izvršenje provodi radnim danom, tijekom dana.
+M| Kada se izvršenje obustavlja? | *Kad je obveza izvršena | *Kad izvršenje nije dopušteno | *Kad je izvršenje započeto prema osobi koja nije u obvezi | Kad izvršenik zatraži odgodu | Kad je ukinuto rješenje o obustavi || Izvršene radnje se poništavaju.
+P| Spojite vrstu odgode izvršenja s razlogom. | Obvezna odgoda = dopušten poček ; Fakultativna odgoda = izbjegavanje teško popravljive štete || Odgoda se određuje rješenjem.
+# K: Prigovor i obavijesti
+S| U kojem roku tijelo mora izdati pisanu obavijest na zahtjev zainteresirane osobe? | *15 dana | 8 dana | 30 dana | 60 dana || Ako odbije, prigovor je dopušten u 8 dana.
+F| Ako tijelo odbije izdati obavijest, prigovor se izjavljuje u roku od [8/15/30] dana, a čelnik o prigovoru odlučuje rješenjem u roku od [8/15/30] dana. || Rokovi su 8 i 8 dana.
+S| Do kada se može izjaviti prigovor na drugo postupanje javnopravnog tijela? | *Dok takvo postupanje traje ili traju njegove posljedice | 8 dana | 15 dana | 30 dana || Prigovor ne veže rok dok postupanje traje.
+S| Do kada se može izjaviti prigovor na postupanje pružatelja javnih usluga? | *Dok traje radnja ili propuštanje radnje | 8 dana od radnje | 15 dana od radnje | 30 dana || Prigovor se podnosi tijelu nadležnom za nadzor.
+S| U kojem roku tijelo mora obavijestiti korisnika o mjerama po prigovoru na pružatelja javnih usluga? | *Najkasnije 30 dana | 8 dana | 15 dana | 60 dana || Ako korisnik nije zadovoljan, može pokrenuti upravni spor.
+# K: Upravni spor
+S| Tko je nadležan za upravne sporove u prvom stupnju? | *Upravni sudovi | Općinski sudovi | Visoki upravni sud | Ustavni sud || VUS odlučuje u žalbenoj fazi, a VSRH o izvanrednom preispitivanju.
+P| Spojite sud s ulogom. | Upravni sud = prvi stupanj ; Visoki upravni sud = žalbe, zakonitost općih akata ; Vrhovni sud RH = izvanredno preispitivanje pravomoćne presude || Sudovi u upravnom sporu.
+S| Tko odlučuje u upravnom sporu pred upravnim sudom? | *Sudac kojem je predmet dodijeljen u rad, a kod složenih predmeta vijeće od tri suca | Vijeće od pet sudaca | Sjednica svih sudaca | Predsjednik suda || Predsjednik vijeća je sudac kojem je predmet dodijeljen.
+P| Spojite predmet odlučivanja VUS-a s brojem sudaca u vijeću. | Žalba protiv presude upravnog suda = tri suca ; Zakonitost općeg akta = pet sudaca || VUS odlučuje većinom glasova.
+P| Spojite vrstu pitanja s oblikom sudske odluke. | Glavna stvar i sporedna traženja = presuda ; Procesna pitanja = rješenje || Presuda i rješenje.
+M| Što može biti predmet upravnog spora? | *Zakonitost pojedinačne odluke | *Propuštanje tijela da odluči u roku (šutnja uprave) | *Sklapanje i izvršavanje upravnog ugovora | *Opći akt JLP(R)S | Zaključak samostalno | Pravilnost odluke donesene slobodnom ocjenom || Zaključak se pobija samo s odlukom o glavnoj stvari.
+T| O pojedinačnoj odluci donesenoj slobodnom ocjenom može se voditi spor o zakonitosti, granicama ovlasti i svrsi ovlasti. | T || Spor se ne može voditi o pravilnosti (svrhovitosti) takve odluke.
+S| Koji je uvjet za pokretanje upravnog spora? | *Iscrpljena je svaka druga zakonom propisana pravna zaštita | Stranka je platila pristojbu | Prošlo je godinu dana | Pristanak tijela || Primjer: prije spora se mora izjaviti žalba.
+S| Kojim se aktom pokreće upravni spor? | *Tužbom | Žalbom | Prigovorom | Prijedlogom || Upravni spor uvijek se pokreće tužbom.
+S| U kojem se roku podnosi tužba u upravnom sporu? | *30 dana od dostave osporene odluke | 15 dana | 8 dana | 60 dana || Kod šutnje uprave tužba se podnosi najranije 8 dana nakon proteka roka.
+S| Kada se najranije može podnijeti tužba zbog šutnje uprave? | *Osam dana nakon proteka propisanog roka za odluku | Odmah po proteku roka | 30 dana nakon roka | 60 dana nakon zahtjeva || Zakonska pretpostavka je da je zahtjev odbijen.
+T| Tužba predana u roku nenadležnom sudu ili tuženiku smatra se podnesenom u roku. | T || Takva tužba ne propada zbog pogreške u adresi.
+S| Što se tužbom u upravnom sporu NE može zahtijevati? | *Ovrha donesene presude | Naknada štete | Povrat stvari | Poništavanje pojedinačne odluke || Ovrha nije tužbeni zahtjev u upravnom sporu.
+P| Prema čijem se prebivalištu određuje mjesna nadležnost upravnog suda? | Opće pravilo = prebivalište ili sjedište tužitelja ; Tužitelj bez prebivališta u RH = boravište tužitelja ; Nekretnina = mjesto nekretnine ; Upravni ugovor = sjedište javnopravnog tijela koje je stranka ugovora || Mjerodavan je tužitelj, nikad tuženik.
+M| Tko su stranke u upravnom sporu? | *Tužitelj | *Tuženik | *Zainteresirana osoba | Vještak | Umješač || Službena osoba koja je donijela odluku nije stranka.
+S| Koliko načela upravnog spora propisuje ZUS? | *Sedam | Pet | Tri | Deset || Zakonitost, kontradiktornost, usmena rasprava, učinkovitost, pomoć neukoj stranci, obveznost odluka, jezik i pismo.
+S| Koje NIJE načelo upravnog spora prema ZUS-u? | *Načelo traženja materijalne istine | Načelo usmene rasprave | Načelo pomoći neukoj stranci | Načelo obveznosti sudskih odluka || Materijalna istina nije među načelima ZUS-a.
+P| Spojite načelo upravnog spora sa sadržajem. | Zakonitost = sud odlučuje na temelju Ustava, prava EU, ugovora i zakona ; Kontradiktornost = svaka stranka se može izjasniti o navodima druge ; Učinkovitost = brzo, bez odugovlačenja ; Pomoć neukoj stranci = odvjetnik nije obvezan ; Obveznost odluka = presuda o općem aktu obvezuje sve || Sedam načela ZUS-a.
+T| Pravomoćna presuda o zakonitosti općeg akta obvezna je za sve. | T || Ostale presude obvezuju stranke i njihove sljednike.
+M| Što je javnopravno tijelo? | *Tijelo državne uprave | *Tijelo JLP(R)S | *Pravna osoba s javnim ovlastima | *Pravna osoba koja obavlja javnu službu | Politička stranka | Veleposlanstvo strane države || Osnovna škola može biti i pravna osoba s javnim ovlastima i pružatelj javne usluge.
+M| Što mora sadržavati tužba? | *Naziv suda | *Naznaku tužitelja i tuženika | *Oznaku odluke | *Razloge, činjenice i dokaze | Ime suca | Iznos pristojbe || Obvezni sadržaj tužbe.

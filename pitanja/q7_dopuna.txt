@@ -1,0 +1,86 @@
+# K: Pučki pravobranitelj
+S| Čija prava štiti pučki pravobranitelj? | *Ljudska prava i slobode iz Ustava, zakona i međunarodnih akata koje je RH prihvatila | Samo prava državnih službenika | Samo prava potrošača | Samo prava stranih državljana || Djelokrug obuhvaća sva ustavna, zakonska i međunarodna ljudska prava.
+T| Pučki pravobranitelj samostalan je i neovisan u radu. | T || Samostalnost i neovisnost jamče Ustav i Zakon o pučkom pravobranitelju.
+# K: Opća načela državne uprave
+T| Pravna zaštita protiv pojedinačnih akata državne uprave propisuje se zakonom kojim se uređuje pojedino upravno područje. | T || Primjer je Zakon o porezu na promet nekretnina.
+F| Poslovi državne uprave obavljaju se tako da građani na [jednostavan i djelotvoran/složen i formalan/spor i siguran] način ostvaruju svoja prava i ispunjavaju građanske [dužnosti/želje/privilegije]. || Uprava je servis građana.
+# K: Kazneni postupak
+M| Koja prava ima osoba osumnjičena ili optužena za kazneno djelo? | *Pravo na branitelja | *Pravo na pomoć tumača | *Pravo ispitivati svjedoke | *Pravo biti obaviještena o razlozima optužbe | Pravo izabrati suca | Pravo odbiti suđenje || Ustavna prava okrivljenika.
+T| Pritvorenik se uz zakonsko jamstvo može pustiti da se brani sa slobode. | T || Jamstvo omogućuje obranu sa slobode.
+T| Imovinska korist ostvarena djelima koja ne zastarijevaju oduzet će se. | T || Ustav propisuje oduzimanje takve koristi.
+S| Kada se netko smije kazneno progoniti i kazniti? | *Samo za djelo koje je u vrijeme počinjenja bilo zakonom propisano kao kazneno djelo | Za svako djelo koje sud ocijeni štetnim | Za djelo propisano nakon počinjenja | Za svako nemoralno ponašanje || Zabrana retroaktivne primjene kaznenog zakona.
+# K: Zaštita osobnih podataka
+M| Što je »obrada« osobnih podataka prema Općoj uredbi? | *Prikupljanje | *Pohrana | *Brisanje ili uništavanje | *Uvid i uporaba | Samo prodaja podataka | Samo objava na internetu || Obrada je svaki postupak s podacima, automatiziran ili ne.
+S| Koliko je pravnih temelja za obradu dovoljno da obrada bude zakonita? | *Najmanje jedan | Najmanje dva | Svih šest | Najmanje tri || Svaki od šest temelja sam je dovoljan.
+M| Što još AZOP može činiti? | *Davati stručna mišljenja na nacrte propisa | *Surađivati s nadzornim tijelima drugih država | *Pokretati prekršajne i druge postupke | Donositi zakone | Suditi u kaznenim predmetima || AZOP nadzire primjenu Opće uredbe i Zakona o provedbi (NN 42/18).
+# K: Pristup informacijama (ZPPI)
+M| Kako tijela javne vlasti omogućuju pristup informacijama? | *Objavom informacija o svom radu | *Davanjem informacije na zahtjev | *Objavom u Središnjem katalogu službenih dokumenata | Samo osobnim dolaskom u tijelo | Samo putem odvjetnika || Pristup se omogućuje proaktivno i na zahtjev.
+T| Pravo na pristup informacijama imaju i stranci i pravne osobe, pod jednakim uvjetima. | T || Pravo ne ovisi o državljanstvu.
+S| Koji odbor objavljuje javni poziv za izbor Povjerenika za informiranje? | *Odbor za Ustav, Poslovnik i politički sustav | Odbor za financije | Odbor za pravosuđe | Mandatno-imunitetno povjerenstvo || Uz mišljenje Odbora za informiranje, informatizaciju i medije predlaže najmanje dva kandidata.
+F| Javni poziv za Povjerenika objavljuje se najkasnije [6 mjeseci/30 dana/godinu dana] prije isteka mandata. || Prijevremeni prestanak traži poziv u 30 dana.
+T| Ako se zahtjev za ponovnu uporabu odbije zbog intelektualnog vlasništva, tijelo mora obavijestiti podnositelja o nositelju prava. | T || Mora navesti nositelja prava ili licencije.
+# K: Suzbijanje diskriminacije
+M| Koje međunarodne akte spominje modul o diskriminaciji? | *Europska konvencija o zaštiti ljudskih prava i temeljnih sloboda | *Povelja o temeljnim pravima EU | Europska konvencija o zaštiti ljudskih sloboda i temeljnih prava | Ženevska konvencija o ratnim zarobljenicima || Treća opcija je pogrešan naziv – zamka.
+F| ZSD osigurava zaštitu i promicanje [jednakosti/slobode/solidarnosti] kao najviše vrednote ustavnog poretka RH. || Jednakost – čl. 3. Ustava.
+S| Što je segregacija? | *Prisilno i sustavno razdvajanje osoba po nekoj od zaštićenih osnova | Svaka podjela učenika po razredima | Dobrovoljno udruživanje | Neželjeno ponašanje spolne naravi || Odlučujući je učinak društvene podređenosti.
+M| Što su primjeri razumne prilagodbe za osobe s invaliditetom? | *Rampa ili dizalo | *Fleksibilno radno vrijeme | *Usmeni test umjesto pisanog | *Brailleov terminal | Veća plaća | Duži godišnji odmor za sve || Prilagodba ne smije biti nerazmjeran teret.
+M| Koja su područja zaštite od diskriminacije? | *Rad i zapošljavanje | *Obrazovanje | *Pristup dobrima i uslugama | *Stanovanje | Vjerski obredi unutar crkve | Obiteljske svađe || ZSD navodi deset područja.
+S| Što je uznemiravanje prema ZSD-u? | *Neželjeno ponašanje vezano uz zaštićenu osnovu koje povređuje dostojanstvo i stvara neprijateljsko okruženje | Svaka kritika na poslu | Jedan oštar razgovor | Neželjeno ponašanje spolne naravi || Spolno uznemiravanje je ponašanje seksualne naravi.
+T| Mjere pozitivne akcije moraju biti privremene naravi. | T || Posebne mjere su privremene, nužne i prikladne.
+# K: Ravnopravnost spolova
+S| Što je »gender mainstreaming«? | *Obveza ocjenjivanja učinaka odluka na položaj žena i muškaraca u svim fazama | Kvota za žene u Saboru | Zabrana reklama | Jednak broj žena i muškaraca u svakoj službi || Obveza vrijedi za državna tijela, jedinice i pravne osobe s javnim ovlastima.
+M| Na temelju čega ZRS posebno zabranjuje diskriminaciju? | *Trudnoće i materinstva | *Bračnog i obiteljskog statusa | *Spolne orijentacije | Visine | Boje očiju || Nepovoljnije postupanje zbog trudnoće je diskriminacija po spolu.
+M| Što su poslovi Pravobraniteljice za ravnopravnost spolova? | *Zaprima i ispituje prijave | *Provodi mirenje | *Provodi neovisna istraživanja i objavljuje izvješća | Donosi zakone | Izrađuje nacionalnu politiku || Nacionalnu politiku izrađuje Ured.
+# K: Biračko pravo i izbori
+M| Koje vrste izbora postoje u RH? | *Za Predsjednika RH | *Za zastupnike u Sabor | *Za načelnike, gradonačelnike i župane | *Za članove Europskog parlamenta | Za suce Vrhovnog suda | Za ministre || Suci i ministri se ne biraju na izborima.
+T| Glasovanjem na lokalnim izborima birač smije glasovati u ime druge osobe ako ima punomoć. | N || Birač ne može glasovati u ime druge osobe.
+S| Kako se popunjava listić za izbor članova predstavničkog tijela? | *Zaokruživanjem rednog broja ispred naziva liste | Upisivanjem imena kandidata | Precrtavanjem ostalih lista | Potpisom || Listić s dvije zaokružene liste je nevažeći.
+S| Kome pripada mjesto u predstavničkom tijelu kad su rezultati dijeljenja izjednačeni? | *Listi s više glasova, a pri jednakim glasovima svakoj od tih lista | Listi koja je prva predana | Ždrijebu | Najstarijem kandidatu || Zato broj članova iznimno može biti paran.
+# K: Državni službenici – prijam
+S| Što je Centralizirani sustav za zapošljavanje? | *Informacijski sustav u kojem se provodi zapošljavanje u državnoj službi | Popis nezaposlenih na Zavodu | Registar sindikata | Baza svih zakona || U njemu se objavljuju natječaji, podnose prijave i testiraju kandidati.
+T| Kao radno iskustvo na odgovarajućim poslovima računa se i stručno osposobljavanje bez zasnivanja radnog odnosa. | T || I osposobljavanje se računa.
+M| Što sadrži rješenje o rasporedu na radno mjesto (prema modulu)? | *Radno iskustvo kandidata na svim poslovima | *Podatke o dnevnom i tjednom odmoru | Ukupni radni staž | Podatke o plaći susjeda || Ispitni odgovor prema kvizu u modulu.
+S| Kome tijela državne uprave dostavljaju prijedlog pravilnika o unutarnjem redu na prethodnu suglasnost? | *Tijelu državne uprave nadležnom za službeničke odnose | Hrvatskom saboru | Predsjedniku RH | Ustavnom sudu || To je Ministarstvo pravosuđa, uprave i digitalne transformacije.
+T| Ured predsjednika RH mora dobiti prethodnu suglasnost za svoj pravilnik o unutarnjem redu. | N || Dostavlja pravilnik, ali za njegovo donošenje ne treba prethodna suglasnost.
+R| Poredajte korake donošenja plana zapošljavanja. | Prijedlog plana u vrijeme pripreme proračuna > Prethodna suglasnost tijela za financije i za službeničke odnose > Čelnik tijela za službeničke odnose donosi plan > Objava u Centraliziranom sustavu || Postupak donošenja plana zapošljavanja.
+# K: Državni službenici – prava i dužnosti
+M| Što su temeljne dužnosti državnih službenika? | *Čuvanje tajnosti podataka | *Odbijanje ponuđenih darova | *Prisutnost na radnom mjestu | *Namjenska uporaba povjerene imovine | Poticanje političkog organiziranja | Nagrađivanje kolega || Popis temeljnih dužnosti iz ZDS-a.
+T| Službenik mora prijaviti da je njegov bračni drug član političke stranke. | N || To ne mora prijaviti.
+T| Odluka o izuzimanju službenika od rada na određenim poslovima unosi se u njegov osobni dosje. | T || Izuzimanje zbog sukoba interesa evidentira se u dosjeu.
+S| Tko donosi posebne etičke kodekse pojedinih tijela? | *Čelnici tijela uz prethodnu suglasnost Vlade | Sabor | Etičko povjerenstvo | Sindikat || Objavljuju se na mrežnim stranicama tijela.
+# K: Uredsko poslovanje
+P| Spojite uredsko poslovanje s opsegom. | Uži smisao = zaprimanje, razvrstavanje, upisivanje, otpremanje i pismohrana ; Širi smisao = raspored prostorija, primanje stranaka, dežurstvo, knjižnica, pečati || Uži smisao je rukovanje dokumentacijom.
+S| Što je jedinstvena oznaka pismena? | *Oznaka u obliku linearnog ili 2D bar koda s oznakom tijela, klasifikacijom i rednim brojem pismena | Potpis čelnika | OIB stranke | Datum zaprimanja || Jedinstveni identifikator nastaje strojno, slučajnim odabirom.
+S| Tko u pravilu razvrstava zaprimljena pismena na upravne i neupravne predmete? | *Službena osoba koja obavlja poslove pisarnice | Čelnik tijela | Svaki službenik sam | Stranka || Iznimno čelnik može odrediti drugu osobu.
+S| Kako se postupa s pogrešno dostavljenom pošiljkom? | *Bez odgode se prosljeđuje naslovljenom primatelju uz službenu bilješku | Vraća se pošti nakon mjesec dana | Uništava se | Zadržava se u pismohrani || Bilješka se upisuje u evidenciju zaprimljenih pošiljki.
+S| Što se radi s novcem priloženim uz pošiljku? | *Predaje se službenoj osobi za financijsko poslovanje | Vraća se pošiljatelju poštom | Zadržava ga pisarnica | Uplaćuje se u proračun bez evidencije || Novac preuzima financijska služba.
+S| Što se smatra ako pošiljatelj na poziv ne dostavi nečitljivo elektroničko pismeno u čitljivom obliku? | *Da pismeno nije zaprimljeno | Da je odustao od svih prava | Da je pismeno zaprimljeno | Da treba platiti kaznu || Pošiljatelja se obavještava bez odgode.
+T| Kad se predmet vodi i u fizičkom obliku, o tome se sastavlja službena bilješka u informacijskom sustavu. | T || Fizički predmet dostavlja se službeniku kojem je raspoređen.
+S| Što se događa s nedovršenim predmetima službenika koji prestane raditi, a ne preda ih? | *Automatski se prenose na neposredno nadređenog službenika | Zatvaraju se | Ostaju bez nositelja | Vraćaju se strankama || Dovršeni predmeti idu u pismohranu.
+F| Ako neupravni predmet postane upravni, nastavlja se voditi pod [novom/istom/privremenom] klasifikacijskom oznakom, a u ranijem predmetu [onemogućuje se daljnji rad/nastavlja se rad/briše se sav sadržaj]. || Pravilo za promjenu vrste predmeta.
+# K: ZUP – opća pravila
+T| Zaprimanje zahtjeva na jedinstvenom upravnom mjestu mijenja stvarnu i mjesnu nadležnost tijela. | N || Nadležnost ostaje ista.
+S| Primjer upravne stvari u kojoj se štiti pravni interes stranke je: | *Sudjelovanje u legalizaciji susjedne bespravne gradnje | Kupnja stana | Upis na fakultet | Ugovor o radu || Susjed ima pravni interes u postupku legalizacije.
+S| Što kolegijalno tijelo može učiniti radi lakšeg vođenja postupka? | *Pisano ovlastiti službenu osobu za postupanje do donošenja odluke | Prenijeti odlučivanje na stranku | Odustati od odlučivanja | Odlučivati bez glasovanja || Ovlaštena osoba podnosi izvješće i prijedlog odluke.
+# K: Upravni spor
+P| Spojite razlog spora zbog šutnje uprave s opisom. | Nerješavanje žalbe = tijelo drugog stupnja ne odluči o žalbi ; Nedonošenje prvostupanjskog rješenja = žalba nije dopuštena, a rješenje nije doneseno ; Nedonošenje nijednog rješenja = nema ni prvostupanjskog ni drugostupanjskog akta || Zakonska pretpostavka je da je zahtjev odbijen.
+M| Koji su sporedni tužbeni zahtjevi? | *Povrat stvari | *Naknada štete koju je počinio tuženik | Ovrha presude | Ukidanje zakona || Zahtjev za naknadu štete mora biti sadržan u tužbi.
+S| Što mora naznačiti tužitelj koji nema prebivalište, boravište ni sjedište u RH? | *Opunomoćenika ili opunomoćenika za primanje pismena | Jamca | Bankovni račun | Svjedoka || Inače se pismena ne bi mogla uredno dostavljati.
+S| Što se smatra danom predaje tužbe podnesene elektronički? | *Dan kad je informacijski sustav potvrdio primitak | Dan kad je sudac otvorio tužbu | Dan zakazivanja rasprave | Dan plaćanja pristojbe || Tužba mora biti potpisana kvalificiranim elektroničkim potpisom.
+T| Ako sud propusti postupiti po nekom načelu upravnog spora, presuda je nezakonita. | T || Zato je poštivanje načela jedna od ključnih zadaća suca.
+M| O čemu se NE može voditi upravni spor? | *O stvarima u kojima je sudska zaštita osigurana izvan upravnog spora | *Samostalno o postupovnoj odluci (zaključku) | *O pravilnosti odluke donesene slobodnom ocjenom | O šutnji uprave | O upravnom ugovoru || Iznimke od upravnog spora prema ZUS-u.
+# K: Izvršnost i izvršenje
+S| Tko izvršava nenovčane obveze? | *Tijelo koje je o stvari riješilo u prvom stupnju | Uvijek policija | Sud | Stranka sama || Ako izvršava drugo tijelo, potrebna je potvrda izvršnosti.
+M| Što je predmet izvršenja nenovčanih obveza? | *Poduzimanje radnje | *Suzdržavanje od radnje | *Trpljenje radnje | *Davanje stvari | Plaćanje poreza | Isplata plaće || Četiri vrste nenovčanih obveza.
+M| Kome pripada inicijativa za izvršenje? | *Službenoj osobi, kad to nalaže javni interes | *Predlagatelju, kad je izvršenje u interesu stranke | *Strankama, na temelju nagodbe | Sindikatu | Svjedoku || Inicijativa za izvršenje.
+S| Što mora sadržavati rješenje o izvršenju? | *Vrijeme, mjesto i način izvršenja te opomenu o novčanoj kazni i iznos kazne | Samo potpis | Samo iznos duga | Ime suca || Može se odrediti i dodatni rok ili ispunjenje odmah.
+# K: Upravne pristojbe
+M| Pred kojim se tijelima plaćaju upravne pristojbe? | *Pred tijelima državne uprave | *Pred diplomatskim misijama i konzularnim uredima RH | *Pred tijelima JLP(R)S | *Pred pravnim osobama s javnim ovlastima | Pred Ustavnim sudom u svakom postupku | Pred privatnim tvrtkama || Pristojbe se plaćaju prema Zakonu o upravnim pristojbama i Tarifi.
+T| Pristojbe se ne plaćaju za elektroničke usluge razine informatiziranosti 4 i više. | T || Poticaj e-upravi.
+S| Kolika smije biti vrijednost druge imovine osobe slabog imovnog stanja koja je oslobođena pristojbi? | *Do 3981,68 eura | Do 30.000 eura | Do 1000 eura | Do 300.000 kuna || U kunama: 30.000 kn; 300.000 kn je zamka.
+# K: Natpisne ploče, zaglavlja, pečat
+M| Što sadrži zaglavlje akta ministarstva? | *Grb RH i naziv »Republika Hrvatska« | *Naziv ministarstva | *Klasifikacijsku oznaku i urudžbeni broj | *Mjesto i datum izrade akta | Ime i prezime stranke | OIB ministra || Sastav zaglavlja akta ministarstva.
+S| Gdje se stavlja grb općine na zaglavlju i natpisnoj ploči? | *Ispred naziva općine | Iza naziva općine | Ispod potpisa | Na poleđini || Općina, grad i županija mogu koristiti svoj grb.
+S| Što natpisna ploča tijela županije sadrži, a ploča općine i grada ne? | *Sjedište županije i naziv tijela županije | Grb RH | Naziv RH | Radno vrijeme || Posebnost natpisne ploče županije.
+T| Pravne osobe s javnim ovlastima smiju stavljati pečat s grbom RH samo na akte koje donose u okviru javnih ovlasti. | T || Za ostale akte ne smiju.
+S| Kako se mora čuvati pečat nakon radnog vremena? | *Pohraniti tako da se onemogući pristup neovlaštenim osobama | Ostaviti na stolu | Ponijeti kući | Predati portiru || Djelatniku kojem je pečat povjeren treba osigurati sigurno čuvanje.

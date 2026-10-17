@@ -1,0 +1,121 @@
+# K: EU – povijest i ugovori
+S| Što je bio primarni motiv ujedinjenja Europe nakon Drugog svjetskog rata? | *Očuvanje teško postignutog mira i sprječavanje novih ratova | Stvaranje zajedničke vojske | Ukidanje nacionalnih valuta | Zajednička svemirska politika || Mir je bio temeljni motiv, a gospodarska suradnja bila je sredstvo.
+R| Poredajte događaje kronološki. | Osnivanje OEEC-a > Osnivanje Vijeća Europe > Schumanova deklaracija > Pariški ugovor (EZUČ) > Rimski ugovori (EEZ i EURATOM) || 1948., 1949., 1950., 1951., 1957.
+R| Poredajte ugovore kronološki. | Pariški ugovor > Rimski ugovori > Ugovor o spajanju > Jedinstveni europski akt > Ugovor iz Maastrichta > Ugovor iz Amsterdama > Ugovor iz Nice > Ugovor iz Lisabona || 1951., 1957., 1965., 1987., 1992., 1997., 2001., 2007.
+S| Koje je zajednice osnovao Pariški ugovor iz 1951.? | *Europsku zajednicu za ugljen i čelik | Europsku ekonomsku zajednicu | Europsku uniju | EURATOM || Pariški ugovor osnovao je EZUČ.
+M| Koje su države osnivačice EZUČ-a? | *Njemačka | *Francuska | *Italija | *Nizozemska | Velika Britanija | Španjolska || Šest osnivačica: Njemačka, Francuska, Italija, Belgija, Nizozemska i Luksemburg.
+S| Koja država NIJE osnivačica EZUČ-a? | *Velika Britanija | Belgija | Luksemburg | Italija || Velika Britanija ušla je tek 1973.
+S| Koji je bio primarni cilj osnivanja EZUČ-a? | *Osiguravanje trajnog mira na europskom tlu | Ukidanje carina na sve proizvode | Znanstvena suradnja | Zajednička valuta || Zajedničko upravljanje ugljenom i čelikom trebalo je onemogućiti novi rat.
+S| Od koga potječe ideja o stavljanju proizvodnje uglja i čelika Francuske i Njemačke pod zajedničko tijelo? | *Jeana Monneta | Winstona Churchilla | Alcidea de Gasperija | Paul-Henrija Spaaka || Monnet je izradio Plan za modernizaciju i obnovu.
+S| Kada se obilježava Dan Europe? | *9. svibnja | 1. srpnja | 25. ožujka | 1. siječnja || Na 9. svibnja 1950. Robert Schuman predstavio je svoju deklaraciju.
+S| Koje su zajednice osnovane Rimskim ugovorima 1957.? | *EEZ i EURATOM | EZUČ i EEZ | EU i EURATOM | EZUČ i EURATOM || Rimski ugovori osnovali su EEZ i EURATOM.
+S| Tko je predsjedao Međuvladinim odborom osnovanim na Konferenciji u Messini 1955.? | *Paul-Henri Spaak | Jean Monnet | Robert Schuman | Konrad Adenauer || Spaakovo izvješće bilo je temelj Rimskih ugovora.
+S| Koji je cilj EURATOM-a? | *Suradnja i istraživanje u nuklearnom sektoru za miroljubive svrhe | Zajedničko tržište uglja i čelika | Zajednička obrana | Zajednička valuta || EURATOM služi civilnoj uporabi nuklearne energije.
+S| Kojim su ugovorom EZUČ, EEZ i EURATOM spojeni u Europsku zajednicu? | *Ugovorom o spajanju (1965.) | Ugovorom iz Maastrichta | Jedinstvenim europskim aktom | Ugovorom iz Nice || Ugovor o spajanju potpisan je 1965., a na snazi je od 1967.
+S| Koji je ugovor uveo dovršenje jedinstvenog unutarnjeg tržišta i postupak suradnje s Parlamentom (1987.)? | *Jedinstveni europski akt | Ugovor iz Amsterdama | Ugovor iz Nice | Ugovor iz Lisabona || Jedinstveni europski akt stupio je na snagu 1.7.1987.
+S| Kojim je ugovorom utemeljena Europska unija? | *Ugovorom iz Maastrichta | Ugovorom iz Lisabona | Ugovorom iz Nice | Rimskim ugovorima || Maastricht (1992./1993.) utemeljio je EU.
+P| Spojite stup EU (Maastricht) s područjem. | Prvi stup = Europske zajednice (nadnacionalni) ; Drugi stup = zajednička vanjska i sigurnosna politika ; Treći stup = pravosuđe i unutarnji poslovi || EU se nakon Maastrichta prikazivala kao grčki hram na tri stupa.
+M| Što je uveo Ugovor iz Amsterdama? | *Uvrštavanje Schengenskog sporazuma u Ugovor | *Proširenje suodlučivanja Europskog parlamenta | *Mogućnost suspenzije država članica iz odlučivanja | Pravnu osobnost EU-a | Utemeljenje EU-a || Pravna osobnost dolazi s Lisabonom, a utemeljenje EU-a s Maastrichtom.
+T| Ugovor iz Amsterdama potpisan je 1997. godine. | T || Potpisan je 2.10.1997., a na snazi je od 1.5.1999.
+S| Koji je bio glavni razlog donošenja Ugovora iz Nice? | *Institucionalna prilagodba EU-a pred novo proširenje | Uvođenje eura | Osnivanje EU-a | Izlazak Velike Britanije || Nica je pripremila institucije za veliko proširenje 2004.
+M| Što je donio Ugovor iz Lisabona? | *Pravnu osobnost EU-a | *Europsko vijeće kao službenu instituciju | *Europsku građansku inicijativu | *Pravno uređenu mogućnost izlaska iz EU-a | Utemeljenje EU-a | Osnivanje EZUČ-a || Lisabon je na snazi od 2009.
+F| Europska građanska inicijativa omogućuje građanima da peticijom s [milijun/100.000/pola milijuna] potpisa traže od [Europske komisije/Europskog parlamenta/Suda EU-a] prijedlog novog akta. || Milijun potpisa, upućuje se Komisiji.
+S| Koliko vremena ima nacionalni parlament za prigovor u postupku pravovremenog upozorenja? | *Osam tjedana | Četiri tjedna | Tri mjeseca | 30 dana || Lisabonom su ojačani nacionalni parlamenti.
+T| Povelja EU o temeljnim pravima Ugovorom iz Lisabona dobila je istu pravnu snagu kao Ugovori. | T || Povelja je pravno obvezujuća.
+M| Što su primarni izvori prava EU-a? | *Osnivački ugovori i njihove izmjene | *Opća načela prava EU-a | *Povelja o temeljnim pravima | Uredbe | Direktive || Uredbe i direktive su sekundarni (izvedeni) izvori.
+T| Direktive su primarni izvor prava EU-a. | N || Direktive i uredbe su sekundarno pravo.
+S| Što je pravna stečevina (acquis communautaire)? | *Ukupnost pravnih normi iz osnivačkih ugovora ili izvedenih iz njih, uključujući praksu Suda EU-a | Samo osnivački ugovori | Nacionalni zakoni država članica | Popis država članica || Acquis obuhvaća i tumačenja Suda EU-a.
+# K: EU – simboli, jezici, proširenja
+S| Koji je moto EU-a? | *Ujedinjeni u različitosti | Mir kroz suradnju | Jedno tržište, jedna Europa | Sloboda, jednakost, bratstvo || Moto se koristi od 2000.
+S| Koliko službenih jezika ima EU? | *24 | 27 | 23 | 21 || Država je 27, jezika 24.
+T| Engleski nakon Brexita više nije službeni jezik EU-a. | N || Ostao je službeni jer je službeni jezik Irske i Malte.
+T| Europska zastava ima 15 zvjezdica. | N || Ima 12 zvjezdica, neovisno o broju članica.
+S| Koja je himna EU-a? | *Beethovenova »Oda radosti«, bez stihova | Mozartova »Mala noćna muzika« | Verdijev »Nabucco« | Haydnova himna || Oda radosti iz 1823.
+P| Spojite val proširenja s državama. | 1973. = Danska, Irska, Velika Britanija ; 1981. = Grčka ; 1986. = Portugal i Španjolska ; 1995. = Austrija, Finska, Švedska ; 2007. = Bugarska i Rumunjska || Sva proširenja do Hrvatske 2013.
+S| Kada je bilo najveće proširenje EU-a (10 država odjednom)? | *2004. | 2007. | 1995. | 2013. || 1. svibnja 2004. ušlo je 10 država.
+S| Koja je država dvaput na referendumu odbila ulazak u Zajednicu, odnosno Uniju? | *Norveška | Švicarska | Island | Danska || Norveška je rekla ne 1972. i 1994.
+S| Koje su dvije države jedine ušle u EU samostalno, a ne u skupini? | *Hrvatska i Grčka | Hrvatska i Malta | Grčka i Cipar | Austrija i Finska || Sve ostale ulazile su u valovima.
+S| Kada je Brexit službeno realiziran? | *31. siječnja 2020. | 23. lipnja 2016. | 1. siječnja 2019. | lipnja 2017. || Referendum je bio 2016., pregovori od 2017., izlazak 2020.
+S| Koliko članica danas ima EU? | *27 | 28 | 26 | 30 || Nakon Brexita EU ima 27 članica.
+S| Koja država NEMA status kandidata za članstvo u EU? | *Armenija | Srbija | Crna Gora | Turska || Armenija nije kandidat; Kosovo je potencijalni kandidat.
+S| Koja država ima status potencijalnog kandidata za članstvo u EU (sredina 2025.)? | *Kosovo | Ukrajina | Moldavija | Gruzija || Ukrajina, Moldavija i Gruzija su kandidati, a Kosovo potencijalni kandidat.
+S| Koliko država članica ima Vijeće Europe? | *46 | 27 | 35 | 50 || Vijeće Europe ima 46 članica, uključujući svih 27 članica EU.
+T| Vijeće Europe je institucija Europske unije. | N || Vijeće Europe je zasebna međunarodna organizacija, osnovana 1949.
+# K: EU – institucije
+M| Koje su institucije Europske unije? | *Europska komisija | *Europski parlament | *Europska središnja banka | *Europski revizorski sud | Vijeće Europe | Odbor regija || Odbor regija je tijelo, a Vijeće Europe zasebna organizacija.
+S| Izbacite uljeza među institucijama EU-a. | *Vijeće Europe | Europsko vijeće | Vijeće Europske unije | Europska komisija || Vijeće Europe nije institucija EU-a.
+P| Spojite instituciju s njezinom ulogom. | Europska komisija = isključivo pravo pokretanja zakonodavnog postupka ; Europski parlament = zastupanje interesa građana ; Europsko vijeće = političko usmjerenje razvoja EU ; Vijeće Europske unije = glas država članica ; Revizorski sud = revizija prihoda i rashoda Unije || Klasično ispitno spajanje.
+S| Koja institucija ima isključivo pravo predlaganja zakonodavnih akata? | *Europska komisija | Europski parlament | Vijeće EU | Europsko vijeće || Komisija predlaže, a EP i Vijeće EU donose.
+S| Zašto se Europsku komisiju naziva »čuvaricom ugovora«? | *Jer pokreće postupke kad država ne prenese ili ne primjenjuje pravo EU-a | Jer čuva izvornike ugovora | Jer potpisuje sve ugovore | Jer bira suce Suda EU-a || Komisija pokreće postupak zbog povrede prava EU-a.
+T| Europska komisija predlaže proračun EU-a, ali ga ne usvaja. | T || Proračun usvajaju EP i Vijeće EU na prijedlog Komisije.
+S| Koliko članova ima Kolegij Europske komisije (s predsjednicom)? | *27 – predsjednica i 26 povjerenika | 28 | 20 | 7 || Predsjednica + 6 izvršnih potpredsjednika + 20 povjerenika.
+S| Kome Europska komisija odgovara za svoj rad? | *Europskom parlamentu | Europskom vijeću | Sudu EU-a | Vijeću EU || EP može izglasati nepovjerenje Komisiji, i tada svi povjerenici odstupaju.
+S| Tko čini Europsko vijeće? | *Šefovi država ili vlada država članica | Ministri država članica | Zastupnici izabrani na izborima | Povjerenici || Ministri čine Vijeće EU, ne Europsko vijeće.
+M| Označite točne tvrdnje o Europskom vijeću. | *Postalo je službena institucija Ugovorom iz Lisabona | *Mandat njegova predsjednika traje 2,5 godine | *Ne donosi zakonodavne akte | Sastaje se jednom godišnje | Odluke donosi isključivo jednoglasno || Sastaje se najmanje četiri puta godišnje, uglavnom odlučuje konsenzusom.
+S| Tko je predsjednik Europskog vijeća (mandat prosinac 2024. – svibanj 2027.)? | *António Costa | Ursula von der Leyen | Charles Michel | Roberta Metsola || Costa je predsjednik Europskog vijeća, von der Leyen predsjednica Komisije.
+S| Tko čini Vijeće Europske unije? | *Ministri država članica, ovisno o resoru | Šefovi država i vlada | Europski zastupnici | Suci || Vijeće EU je glas država članica.
+S| Koliko sastava ima Vijeće EU? | *10 | 7 | 27 | 12 || Deset sastava, od poljoprivrede do vanjskih poslova.
+S| Koliko traje predsjedanje države članice Vijećem EU? | *Šest mjeseci | Godinu dana | Tri mjeseca | Dvije i pol godine || Hrvatska je predsjedala od siječnja do lipnja 2020.
+S| Tko predsjeda Vijeću EU za vanjske poslove? | *Visoki predstavnik Unije za vanjske poslove i sigurnosnu politiku | Ministar vanjskih poslova predsjedajuće države | Predsjednik Europskog vijeća | Predsjednica Komisije || To je iznimka od rotacijskog predsjedanja.
+F| Kvalificirana većina u Vijeću EU traži [55 %/65 %/50 %] država koje obuhvaćaju najmanje [65 %/55 %/75 %] stanovništva Unije. || Dvostruka većina: 55 % država i 65 % stanovništva.
+M| Što NIJE ovlast Vijeća EU? | *Predlaganje novih zakonodavnih akata | *Predlaganje proračuna | Donošenje zakona zajedno s EP-om | Koordiniranje ekonomskih politika || Prijedloge daje Komisija.
+S| Koliko zastupnika ima Europski parlament u mandatu 2024.–2029.? | *720 | 705 | 751 | 732 || 720, uključujući predsjednika.
+S| Koliko zastupnika u Europskom parlamentu ima Hrvatska? | *12 | 11 | 6 | 15 || Hrvatski građani biraju 12 zastupnika svakih 5 godina.
+F| Nijedna država ne može imati manje od [6/4/10] niti više od [96/100/72] zastupnika u EP-u. || Njemačka ima 96, a Cipar, Luksemburg i Malta po 6.
+T| Zastupnici u Europskom parlamentu nastupaju kao zastupnici nacionalnih interesa svojih država. | N || Nastupaju kao članovi političkih klubova.
+M| Koje su ovlasti Europskog parlamenta? | *Donosi zakonodavne akte s Vijećem EU | *Može izglasati nepovjerenje Komisiji | *Usvaja proračun s Vijećem EU | Predlaže zakonodavne akte | Koordinira ekonomske politike država || Predlaganje je pravo Komisije.
+S| Koji je najveći klub zastupnika u EP-u? | *EPP (Europska pučka stranka) | Socijalisti i demokrati | Zeleni | Ljevica || EPP ima 188 zastupnika.
+S| Gdje je sjedište Suda EU-a? | *U Luxembourgu | U Bruxellesu | U Strasbourgu | U Haagu || I Sud i Opći sud su u Luxembourgu.
+P| Spojite sud EU-a s brojem sudaca po državi. | Sud = jedan sudac iz svake države ; Opći sud = dva suca iz svake države || Mandat sudaca je 6 godina i može se obnoviti.
+S| Što nacionalni sud može uputiti Sudu EU-a kad nije siguran je li propis u skladu s pravom EU-a? | *Zahtjev za prethodnu odluku | Tužbu za poništenje | Žalbu | Ustavnu tužbu || Primjer: Općinski građanski sud u Zagrebu uputio je predmet C-567/21.
+S| Gdje je sjedište Europske središnje banke? | *U Frankfurtu | U Bruxellesu | U Luxembourgu | U Parizu || ESB je osnovana 1998. u Frankfurtu.
+S| Koju godišnju stopu inflacije ESB nastoji ne prekoračiti? | *2 % | 3 % | 1 % | 5 % || Cilj stabilnosti cijena je inflacija do 2 %.
+M| Označite točne tvrdnje o Europskom revizorskom sudu. | *Sjedište mu je u Luxembourgu | *Čini ga po jedan član iz svake države | *Mandat članova je 6 godina i može se obnoviti | Sjedište mu je u Frankfurtu | Predlaže proračun EU-a || Revizorski sud provjerava prihode i rashode EU-a.
+# K: EU – tijela i ombudsman
+P| Spojite tijelo EU-a s nadimkom. | Europski gospodarski i socijalni odbor = glas civilnog društva ; Odbor regija = glas lokalne vlasti ; Europski parlament = glas građana ; Vijeće EU = glas država članica || Nadimci se često ispituju.
+S| Tko imenuje članove Odbora regija? | *Vijeće EU na prijedlog država članica | Europsko vijeće | Europski parlament | Europska komisija || Imenuje ih Vijeće EU na 5 godina.
+T| Članovi Odbora regija su ministri država članica. | N || To su izabrani dužnosnici lokalne ili regionalne vlasti.
+M| Koje skupine čine Europski gospodarski i socijalni odbor? | *Poslodavci | *Radnici | *Druge interesne skupine | Ministri | Gradonačelnici || Zajedno čine organizirano civilno društvo.
+S| Što radi Europska investicijska banka? | *Daje zajmove i jamstva za projekte, osobito manje razvijenim regijama | Upravlja eurom | Provodi monetarnu politiku | Revidira proračun EU-a || Euro i monetarna politika su posao ESB-a, ne EIB-a.
+T| Europska investicijska banka je središnja banka eurozone. | N || Središnja banka eurozone je ESB; EIB je u vlasništvu država članica.
+S| Tko bira Europskog ombudsmana? | *Europski parlament, na pet godina | Europska komisija | Vijeće EU | Europski gospodarski i socijalni odbor || Bira ga EP, mandat se može obnoviti.
+M| Što su zadaće Europskog ombudsmana? | *Istrage o nepravilnostima u radu institucija i tijela EU-a | *Istraživanje pritužbi građana na loše upravljanje | Donošenje zakonodavnih akata | Istrage prijevara na štetu proračuna EU | Suđenje u sporovima država || Prijevare istražuju OLAF i EPPO.
+M| Tko može podnijeti pritužbu Europskom ombudsmanu? | *Građani EU | *Poduzeća u EU | *Rezidenti država članica | Samo države članice || Pritužbu podnose građani, poduzeća i rezidenti.
+S| Kada je osnovan Ured europskog javnog tužitelja (EPPO)? | *2021. | 2009. | 2013. | 1999. || EPPO progoni djela na štetu financijskih interesa EU-a.
+# K: EU – tržište, Schengen, EMU, fondovi
+M| Koje su četiri tržišne slobode jedinstvenog tržišta? | *Sloboda kretanja roba | *Sloboda kretanja osoba | *Sloboda pružanja usluga | *Sloboda kretanja kapitala | Sloboda kretanja vojske | Sloboda tiska || Četiri slobode: robe, osobe, usluge, kapital.
+R| Poredajte faze ekonomske integracije. | Zona slobodne trgovine > Carinska unija > Zajedničko tržište > Monetarna unija || Monetarna unija je najviša faza – zajednička valuta i monetarna politika.
+S| Koja je faza integracije ukinula carine među državama i uvela zajedničke carinske tarife prema trećim državama? | *Carinska unija | Zona slobodne trgovine | Monetarna unija | Zajedničko tržište || To je definicija carinske unije.
+S| Kada je počelo stvaranje Schengenskog područja? | *1985. | 1957. | 1992. | 1995. || Pet država potpisalo je Schengenski sporazum 1985.
+T| Stvaranje Schengenskog područja počelo je Rimskim ugovorom 1957. | N || Schengen je počeo 1985.; 1957. je godina osnutka EEZ-a.
+S| Od kada je Hrvatska u Schengenskom području? | *1. siječnja 2023. | 1. srpnja 2013. | 1. siječnja 2025. | 1. siječnja 2020. || Iste godine kad i euro.
+M| Koje države izvan EU-a su članice Schengena? | *Island | *Norveška | *Švicarska | *Lihtenštajn | Irska | Cipar || Irska je izuzeta, a Cipar se tek priprema.
+S| Koliko država obuhvaća Schengensko područje 2025.? | *29 | 27 | 25 | 30 || 25 članica EU + 4 države izvan EU-a.
+R| Poredajte faze utemeljenja EMU-a. | 1. faza (1.7.1990.) – konvergencija politika i ukidanje deviznih kontrola > 2. faza (1.1.1994.) – Europski monetarni institut > 3. faza (1.1.1999.) – uvođenje eura || Tri faze iz plana iz Madrida 1989.
+T| Ekonomska i monetarna unija osnovana je 1979. | N || 1979. osnovan je Europski monetarni sustav (EMS), preteča EMU-a.
+M| Koji su kriteriji konvergencije za uvođenje eura? | *Proračunski deficit do 3 % BDP-a | *Javni dug do 60 % BDP-a | *Stabilnost cijena | *Stabilnost tečaja | Nezaposlenost ispod 5 % || Pet kriterija iz Maastrichta; nezaposlenost nije među njima.
+F| Godišnji proračunski deficit ne smije biti viši od [3 %/5 %/1 %] BDP-a, a javni dug ne smije premašivati [60 %/80 %/40 %] BDP-a. || 3 % i 60 % – ključni kriteriji konvergencije.
+S| Kada su kovanice i novčanice eura puštene u promet? | *1. siječnja 2002. | 1. siječnja 1999. | 1. siječnja 2000. | 1. srpnja 2002. || Euro je obračunska valuta od 1999., a gotovina od 2002.
+S| Koja država ispunjava kriterije za euro, ali je zatražila izuzeće? | *Danska | Poljska | Švedska | Mađarska || Danska ima izuzeće u Dodatku Ugovoru o EU.
+S| Koja je po redu članica eurozone postala Hrvatska 1. siječnja 2023.? | *Dvadeseta | Devetnaesta | Dvadeset prva | Osamnaesta || Bugarska je 1.1.2026. postala 21. članica.
+S| U koliko je država EU-a euro službena valuta (stanje 1.1.2026.)? | *21 | 20 | 19 | 27 || 21 od 27 država.
+P| Spojite fond s namjenom. | Europski socijalni fond+ = uklanjanje nejednakosti i siromaštva, nova radna mjesta ; Kohezijski fond = okoliš i promet u slabije razvijenim područjima ; Europski fond za jamstva u poljoprivredi = izravna plaćanja poljoprivrednicima ; Europski fond za regionalni razvoj = uklanjanje regionalnih neravnoteža || Namjene fondova česta su pitanja spajanja.
+S| Koja je najstarija zajednička politika Unije? | *Zajednička poljoprivredna politika | Ribarstvena politika | Kohezijska politika | Monetarna politika || Ribarstvena politika je od nje odvojena 1983.
+S| Koji je drugi naziv za Zajedničku ribarstvenu politiku? | *Plava Europa | Zelena Europa | Mirna Europa | Morska unija || Za nju se koristi samo jedan fond – EFPRA.
+S| Koja je glavna investicijska politika Unije? | *Regionalna i kohezijska politika | Poljoprivredna politika | Monetarna politika | Trgovinska politika || Kohezija znači ujednačavanje razvoja regija.
+P| Spojite politiku s kategorijom nadležnosti. | Carinska unija = isključiva nadležnost Unije ; Zaštita okoliša = podijeljena nadležnost ; Turizam = nadležnost država uz potporu Unije ; Monetarna politika za eurozonu = isključiva nadležnost Unije || Podjela nadležnosti prema Ugovoru iz Lisabona.
+# K: EU – pristupanje RH
+M| Koji su Kopenhaški kriteriji za članstvo u EU? | *Politički | *Gospodarski | *Pravni | Administrativni | Vojni || Administrativni kriterij je zaseban, iz Madrida 1995.
+S| Na kojem je sastanku postavljen administrativni kriterij za članstvo? | *Na Europskom vijeću u Madridu 1995. | U Kopenhagenu 1993. | U Nici 2000. | U Maastrichtu 1992. || Madrid je dodao administrativni kriterij.
+S| Koji članak Ugovora o EU uređuje pristupanje novih država? | *Članak 49. | Članak 50. | Članak 9. | Članak 4. || Članak 49. UEU uređuje pristupanje.
+S| Kome se podnosi zahtjev za članstvo u EU? | *Vijeću EU | Europskoj komisiji | Europskom parlamentu | Sudu EU || Zahtjev je kratko pismo koje potpisuje predsjednik države i/ili Vlade.
+S| Tko konačno odlučuje o odobravanju statusa kandidata? | *Europsko vijeće | Europska komisija | Europski parlament | Vijeće Europe || Komisija daje mišljenje, a Europsko vijeće odlučuje.
+S| Kada je Hrvatska podnijela zahtjev za članstvo u EU? | *21. veljače 2003. | 3. listopada 2005. | 9. prosinca 2011. | 1. srpnja 2013. || Status kandidata dobila je 2004.
+M| Koje je pretpristupne programe koristila Hrvatska kao kandidatkinja? | *PHARE | *IPA | *SAPARD | ESF || ESF je fond za punopravne članice.
+P| Spojite datum s događajem pristupanja RH. | 3. listopada 2005. = otvoreni pristupni pregovori ; 30. lipnja 2011. = završeni pregovori ; 9. prosinca 2011. = potpisan Ugovor o pristupanju ; 22. siječnja 2012. = referendum o ulasku u EU ; 1. srpnja 2013. = punopravno članstvo || Ključni datumi pristupanja RH.
+S| Koliki je postotak građana na referendumu 2012. glasovao za ulazak u EU? | *66,27 % | 51,3 % | 75,1 % | 60,0 % || Oko dvije trećine glasova bilo je za.
+S| Kada je Hrvatski sabor ratificirao Ugovor o pristupanju? | *9. ožujka 2012. | 22. siječnja 2012. | 1. srpnja 2013. | 9. prosinca 2011. || Sabor je ratificirao 9.3.2012.
+S| U koliko je poglavlja Hrvatska pregovarala? | *35 | 31 | 27 | 40 || Komisija je prvotno podijelila acquis na 31 poglavlje; RH je pregovarala u 35.
+R| Poredajte dvije faze pristupnih pregovora i završetak. | Screening zakonodavstva > Sadržajna faza po poglavljima > Zatvaranje poglavlja i Ugovor o pristupanju || Screening je analitički pregled usklađenosti.
+T| Hrvatska je neto primateljica sredstava iz proračuna EU-a. | T || Više prima iz proračuna EU-a nego što uplaćuje.
+P| Tko predstavlja RH u kojoj instituciji? | Europsko vijeće = predsjednik Vlade RH ; Vijeće EU = ministar čiji je resor na dnevnom redu ; Sud EU = jedan sudac ; Opći sud = dva suca || Česta zamka: predsjednik Vlade ide u Europsko vijeće, ne u Vijeće EU.

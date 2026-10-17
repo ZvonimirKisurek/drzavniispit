@@ -1,0 +1,107 @@
+# K: Sustav državne uprave
+P| Spojite razinu uređenja s donositeljem i aktom. | Osnivanje i djelokrug tijela = Hrvatski sabor zakonom ; Unutarnje ustrojstvo tijela = Vlada uredbom ; Unutarnji red (radna mjesta) = čelnik tijela pravilnikom || Tri razine: zakon – uredba – pravilnik.
+T| Vlada RH može sama osnovati tijelo državne uprave. | N || Vlada samo predlaže; tijela osniva Sabor zakonom.
+S| Čime se utvrđuje stvarna nadležnost za pojedine poslove državne uprave? | *Zakonom kojim se uređuje pojedino upravno područje | Zakonom o ustrojstvu i djelokrugu tijela državne uprave | Pravilnikom o unutarnjem redu | Uredbom o uredskom poslovanju || Primjer: Zakon o socijalnoj skrbi; djelokrug se utvrđuje Zakonom o ustrojstvu i djelokrugu.
+F| Svrha sustava državne uprave je [zakonito/politički], [svrhovito/tajno], djelotvorno i učinkovito obavljanje poslova državne uprave. || Četiri pridjeva iz definicije svrhe.
+M| Koji su državni dužnosnici koji upravljaju tijelima državne uprave? | *Ministar | *Državni tajnik | *Glavni ravnatelj | *Glavni državni inspektor | Načelnik sektora | Voditelj odjela || Načelnik sektora i voditelj odjela su rukovodeći državni službenici.
+F| Tijelima državne uprave upravljaju državni [dužnosnici/službenici/namještenici]. || Dužnosnici upravljaju, a službenici neposredno obavljaju poslove.
+T| Namještenici su službene osobe. | N || Službene osobe su dužnosnici i službenici; namještenici obavljaju pomoćno-tehničke poslove.
+R| Poredajte službene osobe u ministarstvu od vrha prema dnu. | Ministar > Državni tajnik > Rukovoditelj upravne organizacije u sastavu > Načelnik sektora > Voditelj službe > Voditelj odjela || Hijerarhijski red u ministarstvu.
+R| Poredajte rukovoditelje unutarnjih ustrojstvenih jedinica od najviše razine. | Načelnik sektora > Voditelj službe > Voditelj odjela > Voditelj odsjeka > Voditelj pododsjeka || Sektor > služba > odjel > odsjek > pododsjek.
+M| Što su dužnosti čelnika tijela državne uprave? | *Predstavlja, upravlja i rukovodi tijelom | *Brine o zakonitom izvršavanju propisa iz djelokruga | *Provodi politiku Vlade i donosi provedbene propise kad je za to ovlašten | Donosi zakone iz svog područja | Bira suce || Sve tri dužnosti su točne.
+# K: Povjeravanje poslova i ustanove
+S| Kada se poslovi državne uprave povjeravaju jedinicama lokalne i područne samouprave? | *Kad je to opravdano prirodom poslova i osobitim interesom građana | Uvijek kad to župan zatraži | Kad ministarstvo nema dovoljno službenika | Nikad, to nije dopušteno || Kriteriji su priroda poslova i interes građana.
+M| Kada se poslovi državne uprave povjeravaju pravnim osobama s javnim ovlastima? | *Kad je to nužno za provedbu pravno obvezujućih akata EU | *Kad se time osigurava učinkovitije obavljanje uz dokazivo manje troškove | *Kad posao traži osobite tehničke ili stručne uvjete | Kad to traži sindikat | Kad je tijelo državne uprave preopterećeno || Tri zakonska razloga.
+S| Tko odgovara za zakonito obavljanje povjerenih poslova u jedinici lokalne samouprave? | *Izvršno tijelo jedinice | Predstavničko tijelo | Ministar | Pročelnik upravnog odjela || U pravnoj osobi s javnim ovlastima odgovara odgovorna osoba.
+T| Ustanovu može osnovati i fizička osoba. | T || Ustanovu mogu osnovati fizička i pravna osoba.
+S| Kada se ustanova osniva kao javna ustanova? | *Kad je njezina djelatnost zakonom određena kao javna služba | Kad joj je osnivač država | Kad ima više od 50 zaposlenih | Kad se financira iz proračuna || Odlučuje narav djelatnosti – javna služba.
+P| Spojite provedbeni propis sa svrhom. | Pravilnik = detaljnije razrađuje odredbe zakona radi primjene ; Naputak = propisuje način rada u tijelima državne uprave || Provedbene propise donose čelnici kad su zakonom ovlašteni.
+F| Provedbeni propisi objavljuju se u [Narodnim novinama/Službenom listu/dnevnim novinama] i stupaju na snagu [osmoga/prvog/petnaestog] dana od objave. || NN i osmi dan.
+# K: Vlada RH (zakon i rad)
+S| Na temelju čega Vlada donosi uredbe? | *Isključivo na temelju zakona | Na temelju vlastite procjene | Na temelju odluke Predsjednika | Na temelju preporuke Komisije || Uredbe se donose radi izvršenja zakona ili provedbe akata EU.
+P| Spojite akt Vlade s njegovom svrhom. | Uredba = izvršenje zakona ; Odluka = suglasnost ili potvrda akta drugog tijela ; Zaključak = stajalište Vlade i zadaće tijelima državne uprave ; Rješenje = imenovanja i razrješenja || Vrste akata Vlade.
+T| Zaključak Vlade je upravni akt i može se pobijati u upravnom sporu. | N || Zaključak nije upravni akt.
+T| Rješenje Vlade u upravnoj stvari može se pobijati u upravnom sporu. | T || Kadrovska rješenja ne mogu se pobijati, ali rješenja u upravnoj stvari mogu.
+S| Čime se uređuju način rada, ustrojstvo i odlučivanje Vlade? | *Poslovnikom Vlade RH | Ustavom | Uredbom o uredskom poslovanju | Pravilnikom || Poslovnik se donosi na temelju Zakona o Vladi.
+M| Što su stalna radna tijela Vlade? | *Koordinacija za gospodarstvo | *Kadrovska komisija | Ured za udruge | Stručne službe || Uredi su stručne službe, a ne radna tijela.
+M| Koje urede Vlada osniva za stručne poslove? | *Ured za zakonodavstvo | *Ured za ljudska prava i prava nacionalnih manjina | *Ured za ravnopravnost spolova | Ured za posebna pravna pitanja | Ured za upravna i proračunska pitanja || Posljednja dva ureda ne postoje.
+S| Tko imenuje ravnatelja ureda Vlade? | *Vlada na prijedlog predsjednika Vlade, po javnom natječaju | Predsjednik RH | Hrvatski sabor | Ministar uprave || Ravnatelj ima ovlasti čelnika tijela i odgovara Vladi.
+S| Tko je u Užem kabinetu Vlade? | *Predsjednik Vlade i potpredsjednici | Svi ministri | Predsjednik Vlade i ministar financija | Predsjednik RH i predsjednik Vlade || Ostali članovi mogu biti pozvani.
+M| Kada Uži kabinet odlučuje umjesto Vlade? | *U ratnom stanju | *Kod neposredne ugroženosti neovisnosti i opstojnosti RH | *Kod velikih prirodnih nepogoda | Kad je predsjednik Vlade na godišnjem odmoru | Kad ministri ne postignu dogovor || Te odluke moraju biti potvrđene na sljedećoj sjednici Vlade.
+S| Kako Uži kabinet donosi odluke? | *Većinom glasova svih članova, a pri podijeljenim glasovima odlučuje predsjednik Vlade | Jednoglasno | Dvotrećinskom većinom | Većinom nazočnih || Glas predsjednika Vlade odlučuje pri podijeljenim glasovima.
+M| O čemu Vlada odlučuje dvotrećinskom većinom svih članova kad to predlaže nadležnim tijelima? | *Promjena Ustava | *Promjena granica RH | *Raspuštanje Sabora | *Raspisivanje državnog referenduma | Prijedlog proračuna | Imenovanje državnog tajnika || Proračun i imenovanja ne traže 2/3.
+S| Kako Vlada redovno odlučuje? | *Natpolovičnom većinom glasova svih članova | Većinom nazočnih | Jednoglasno | Dvotrećinskom većinom || Pri podijeljenim glasovima odlučuje glas predsjednika Vlade.
+T| Odluka donesena glasovanjem na daljinu potvrđuje se na idućoj sjednici Vlade. | T || Potvrđuje se pri usvajanju zapisnika.
+S| Tko imenuje glavnog tajnika Vlade? | *Vlada na prijedlog predsjednika Vlade | Predsjednik RH | Hrvatski sabor | Ured predsjednika || Glavni tajnik odgovara predsjedniku Vlade i Vladi.
+P| Za koga Glavno tajništvo Vlade obavlja koje poslove? | Vlada, potpredsjednici i članovi Vlade = stručni, analitični, upravno-pravni i administrativni poslovi ; Ured predsjednika Vlade = opći, tehnički, pomoćni i informatički poslovi || Ispravljena slika – tajništvo radi i za Ured predsjednika.
+S| Tko imenuje predstojnika Ureda predsjednika Vlade? | *Vlada na prijedlog predsjednika Vlade | Hrvatski sabor | Predsjednik RH | Glavni tajnik || Predstojnik odgovara predsjedniku Vlade.
+M| Koje su ovlasti predsjednika Vlade? | *Predstavlja Vladu | *Saziva sjednice i predsjeda im | *Potpisuje akte koje Vlada donosi | Imenuje suce | Raspušta Sabor || Raspuštanje Sabora je ovlast Predsjednika RH.
+S| Što rade potpredsjednici Vlade? | *Usklađuju rad ministarstava i brinu o provedbi odluka Vlade | Zamjenjuju Predsjednika RH | Vode Ured predsjednika | Biraju ministre || Potpredsjednici koordiniraju svoja područja.
+S| Tko rješava sukob nadležnosti između tijela državne uprave? | *Vlada RH | Ustavni sud | Hrvatski sabor | Upravni sud || Vlada rješava sukob između svojih tijela; između TDU i JLS-a odlučuje upravni sud.
+# K: Državni službenici – prijam
+S| Tko su namještenici? | *Osobe koje rade na pomoćno-tehničkim poslovima | Osobe koje rješavaju upravne stvari | Dužnosnici | Vježbenici || Namještenici nisu službene osobe.
+M| Kako se popunjavaju slobodna radna mjesta u državnim tijelima? | *Zapošljavanjem | *Napredovanjem | *Premještajem | *Rasporedom | Nasljeđivanjem | Imenovanjem od sindikata || Četiri zakonska načina.
+M| Koji su uvjeti za prijam u državnu službu? | *Odgovarajuća razina obrazovanja | *Zdravstvena sposobnost | *Hrvatsko državljanstvo, ako zakon ne propisuje drukčije | *Radno iskustvo, osim za vježbenike | Članstvo u sindikatu | Položen državni ispit prije prijma || Državni ispit polaže se nakon prijma.
+S| U kojem se roku podnose prijave na javni natječaj za državnu službu? | *15 dana od objave | 8 dana | 30 dana | 60 dana || Prijave se podnose elektronički, u Centralizirani sustav.
+S| Koliko vrijede rezultati testiranja u Centraliziranom sustavu za zapošljavanje? | *Tri godine | Godinu dana | Pet godina | Trajno || Ako se kandidat ponovno testira, vrijedi posljednji rezultat.
+T| Kandidat s pravom prednosti ima prednost pred ostalima samo pod jednakim uvjetima. | T || Pravo prednosti mora se istaknuti u prijavi.
+S| Koliko traje probni rad u državnoj službi? | *Tri mjeseca | Dva mjeseca | Šest mjeseci | Mjesec dana || Probni rad produžuje se za vrijeme rodiljnog dopusta.
+S| Tko ocjenjuje rad tijekom probnog rada? | *Nadređeni službenik | Čelnik tijela osobno | Sindikat | Komisija Ministarstva || Probni rad ocjenjuje nadređeni službenik.
+S| Koliko najdulje može trajati državna služba na određeno vrijeme? | *Godinu dana | Dvije godine | Šest mjeseci | Tri godine || Za privremene poslove ili privremeno povećan opseg.
+S| Za koliko se najdulje može odgoditi dan početka rada? | *Tri mjeseca | Mjesec dana | Šest mjeseci | 15 dana || Odgoda se određuje posebnim rješenjem.
+S| Kada osoba postaje državni službenik? | *Danom početka rada | Danom objave natječaja | Danom potpisa ugovora | Danom polaganja državnog ispita || Službenikom se postaje danom početka rada.
+M| Što su zapreke za prijam u državnu službu? | *Izrečena zabrana prijma u državnu službu | *Ocjena »ne zadovoljava« | *Izvanredni otkaz | Prebivalište izvan Zagreba | Članstvo u stranci || Zapreke su taksativno propisane.
+T| Za prijam korisnika stipendije u državnu službu provodi se javni natječaj. | N || Za stipendiste se ne provodi javni natječaj.
+S| Koliko najviše puta se može pristupiti polaganju državnog ispita za svaku razinu? | *Tri puta | Dva puta | Pet puta | Neograničeno || Najviše tri puta po razini.
+T| Službenik s položenim pravosudnim ispitom mora polagati državni ispit. | N || Položen pravosudni ispit oslobađa obveze.
+S| Najranije kada vježbenik može pristupiti državnom ispitu? | *Tri mjeseca prije isteka probnog rada | Prvog dana rada | Nakon isteka probnog rada | Godinu dana nakon prijma || Vježbenik ispitu može pristupiti 3 mjeseca prije isteka probnog rada.
+S| Koliko službenika mora imati državno tijelo da bi ustrojilo vlastitu jedinicu za upravljanje ljudskim potencijalima? | *50 ili više | 20 ili više | 100 ili više | 10 ili više || Prag je 50 službenika i namještenika.
+M| Što obuhvaća plan zapošljavanja u državnoj službi? | *Potrebe zapošljavanja | *Vježbenike | *Pripadnike nacionalnih manjina | *Osobe s invaliditetom | Plaće dužnosnika | Godišnje odmore || Četiri elementa plana.
+M| Kada se može zapošljavati neovisno o planu zapošljavanja? | *Pri prijmu na određeno vrijeme | *Pri popunjavanju mjesta upražnjenog odlaskom službenika u tekućoj godini | Uvijek kad čelnik odluči | Pri zapošljavanju dužnosnika || Dvije zakonske iznimke.
+T| Plan zapošljavanja može se donijeti za razdoblje od dvije ili tri godine. | T || U pravilu za godinu, ali može i za 2–3 godine.
+# K: Državni službenici – prava i dužnosti
+M| Koja su temeljna prava državnih službenika? | *Pravo na zaštitu od neopravdanog premještaja | *Pravo na jednake mogućnosti napredovanja | *Pravo na plaću i materijalna prava | *Pravo na zaštitu kad prijavi sumnju na korupciju | Pravo na članstvo u stranci | Pravo na studijsku godinu || Popis temeljnih prava iz ZDS-a.
+M| Što se jamči službeniku koji prijavi opravdanu sumnju na korupciju? | *Zaštita anonimnosti | *Zaštita od uskraćivanja prava | *Zaštita od zlostavljanja | Novčana nagrada | Automatsko napredovanje || Zlouporaba prijave je teška povreda dužnosti.
+M| Kada državni službenik MORA odbiti nalog? | *Kad je nalog nezakonit | *Kad bi izvršenje bilo kazneno djelo | *Kad bi izvršenje bilo prekršaj | *Kad je protivan Etičkom kodeksu | Kad je protivan interesu stranke na vlasti | Kad mu nedostaje vremena || Dužan je odbiti nezakonite i neetične naloge.
+M| Kada državni službenik MOŽE odbiti nalog? | *Kad traži viši stupanj stručnog znanja od onog koji ima | *Kad bi bila nanesena šteta njegovim legitimnim pravima | *Kad bi predstavljao opasnost za njegovo zdravlje | Kad ne zna izvršiti nalog | Kad mu se ne sviđa nadređeni || To su razlozi za fakultativno odbijanje.
+S| Što je od navedenog temeljna dužnost državnog službenika? | *Dužnost zamjene odsutnog službenika | Dužnost članstva u sindikatu | Dužnost političkog organiziranja | Dužnost primanja darova || Darove je dužan odbiti, a političko organiziranje ne smije poticati.
+T| Za objavu stručnog članka službenik treba odobrenje čelnika. | N || Odobrenje treba za dodatni posao izvan radnog vremena, ne za stručni članak.
+T| Za prijavu mogućeg sukoba interesa dovoljna je usmena izjava službenika. | N || Potrebna je pisana prijava.
+M| Gdje se objavljuje Etički kodeks državnih službenika? | *U Narodnim novinama | *Na mrežnoj stranici Vlade | *Na mrežnim stranicama svih državnih tijela | U dnevnom listu || Ne objavljuje se u dnevnim novinama.
+S| Tko imenuje Etičko povjerenstvo i na koliko godina? | *Vlada RH, na četiri godine | Sabor, na pet godina | Ministar, na dvije godine | Pučki pravobranitelj, na četiri godine || Etičko povjerenstvo je neovisno tijelo.
+S| U kojem roku nezadovoljni podnositelj pritužbe može se obratiti Etičkom povjerenstvu? | *30 dana od odgovora povjerenika za etiku | 8 dana | 15 dana | 60 dana || Rok je 30 dana; povjerenstvo odgovara u 60 dana kad je riječ o povjereniku za etiku.
+# K: Državni službenici – rad i plaća
+P| Spojite razlog plaćenog dopusta s trajanjem. | Sklapanje braka = 5 radnih dana ; Rođenje djeteta = 5 radnih dana ; Selidba u drugo mjesto = 4 radna dana ; Dobrovoljno davanje krvi = 2 radna dana ; Teška bolest djeteta = 3 radna dana || Plaćeni dopust prema ZDS-u.
+S| Koliko plaćenog dopusta pripada za selidbu u istom mjestu? | *2 radna dana | 4 radna dana | 1 radni dan | 5 radnih dana || Selidba u drugo mjesto donosi 4 dana.
+S| Koliko plaćenog dopusta pripada zbog smrti roditelja? | *5 radnih dana | 2 radna dana | 3 radna dana | 7 radnih dana || Za ostale srodnike pripadaju 2 dana.
+P| Spojite situaciju s dopustom za ispit. | Upućen od čelnika – po ispitu = 2 dana ; Upućen od čelnika – završni rad = 5 dana ; Za vlastite potrebe – po ispitu = 1 dan ; Za vlastite potrebe – završni rad = 2 dana || Upućeni službenik dobiva više dana.
+S| Koliko plaćenog dopusta ima službenik bez obveze polaganja za pripremu državnog ispita? | *Tjedan dana, uključujući dan ispita | Mjesec dana | Dva dana | Nijedan dan || Za pravosudni ispit, kad je obvezan, pripada mu mjesec dana.
+M| U kojim je slučajevima dopušten prekovremeni rad? | *Izvanredno povećanje opsega poslova | *Viša sila | *Prijeka potreba | Odluka Vlade bez razloga | Želja službenika za većom plaćom || Prekovremeni rad traži pisani zahtjev poslodavca.
+F| Stanka traje [30/15/45] minuta i ne može se odrediti u prva [3/2/1] sata rada ni u zadnja [2/3/1] sata rada. || Stanka se ubraja u radno vrijeme.
+S| Koliko najmanje traje dnevni odmor između dva radna dana? | *12 sati | 8 sati | 10 sati | 24 sata || Tjedni odmor je 48 sati.
+S| Koliko najmanje traje plaćeni godišnji odmor? | *Četiri tjedna | Tri tjedna | 20 radnih dana | Pet tjedana || Najmanje četiri tjedna.
+M| Što utječe na uvećanje trajanja godišnjeg odmora? | *Dužina radnog staža | *Složenost poslova i stručna sprema | *Posebni socijalni uvjeti | *Uvjeti rada | Spol | Vjeroispovijest || Spol i vjera ne smiju utjecati na trajanje odmora.
+F| Osnovna plaća je umnožak [koeficijenta/staža/ocjene] radnog mjesta i [osnovice/godina rada/broja djece]. || Koeficijente određuje uredba Vlade, a osnovicu kolektivni ugovor.
+P| Spojite element plaće s aktom kojim se utvrđuje. | Osnovica = kolektivni ugovor ; Koeficijenti = uredba Vlade || Ključno razlikovanje.
+# K: Ocjenjivanje i napredovanje
+R| Poredajte ocjene službenika od najbolje. | Izvrstan > Naročito uspješan > Uspješan > Zadovoljava > Ne zadovoljava || Jedina negativna ocjena je »ne zadovoljava«.
+S| Što se događa službeniku ocijenjenom ocjenom »ne zadovoljava«? | *Služba mu prestaje po sili zakona | Ide na dodatno osposobljavanje | Dobiva pisanu opomenu | Premješta se bez posljedica || Pri ocjeni »zadovoljava« slijedi osposobljavanje ili premještaj.
+S| Do kada se službenici ocjenjuju za prethodnu godinu? | *Do 28. veljače | Do 31. siječnja | Do 31. ožujka | Do 30. lipnja || Ocjenjuje se svake godine, do kraja veljače.
+M| Koja je svrha ocjenjivanja državnih službenika? | *Poticanje na kvalitetno i učinkovito izvršavanje zadaća | *Utvrđivanje doprinosa kao kriterija za nagrađivanje i napredovanje | Natjecanje za bolju poziciju | Stjecanje više dana godišnjeg odmora || Dvije zakonske svrhe.
+S| Kojom ocjenom za prethodnu godinu službenik može redovito napredovati? | *»Uspješan« ili višom | Samo »izvrstan« | »Zadovoljava« ili višom | Bilo kojom pozitivnom || Napredovanje se ostvaruje rasporedom na više radno mjesto.
+T| Službenik može izvanredno napredovati na rukovodeće radno mjesto. | N || Izvanredno napredovanje na rukovodeće mjesto nije moguće.
+F| Suglasnost službenika potrebna je za premještaj izvan mjesta rada udaljen više od [50/30/100] km od prebivališta, ako bitno pogoršava obiteljske prilike. || Granica je 50 km.
+T| Žalba odgađa izvršenje rješenja o premještaju. | N || Žalba ne odgađa izvršenje.
+M| Kada dolazi do stavljanja službenika na raspolaganje? | *Kad se mijenja djelokrug državnog tijela | *Kad se ukidaju svi poslovi u tijelu | Kad službenik dobije lošu ocjenu | Kad službenik ode na bolovanje || Raspolaganje je posljedica ustrojstvenih promjena.
+# K: Prestanak službe i disciplinska odgovornost
+M| Kako prestaje državna služba? | *Po sili zakona | *Otkazom | *Sporazumom | *Istekom roka | Nastupom promijenjenih okolnosti | Sudskim raskidom ugovora || Promijenjene okolnosti i sudski raskid nisu načini prestanka.
+M| Kada služba prestaje po sili zakona? | *Smrću | *Ako ne položi državni ispit u propisanom roku | *Ako se kod premještaja ne javi na novu dužnost u roku | Kad navrši 70 godina | Kad je osuđen na novčanu kaznu || Popis razloga prestanka po sili zakona.
+S| U kojem se roku donosi rješenje o prestanku službe? | *8 dana | 15 dana | 30 dana | 3 dana || Rok je 8 dana.
+P| Spojite situaciju s iznosom naknade za vrijeme udaljenja iz službe. | Redovno = 60 % plaće ; Službenik uzdržava obitelj = 80 % plaće ; Od dana vraćanja u službu = 100 % plaće || Naknada plaće tijekom udaljenja.
+M| Označite točne tvrdnje o žalbi protiv rješenja o udaljenju. | *Žalba se izjavljuje službeničkom sudu u 15 dana | *Službenički sud odlučuje najkasnije u 15 dana | Žalba odgađa izvršenje | Žalba se izjavljuje Vladi || Žalba ne odgađa izvršenje.
+M| Označite točne tvrdnje o postupku zbog povrede službene dužnosti. | *Postupak je hitan | *Rasprava je javna | *Službenik mora biti saslušan | *Kod teške povrede mora se provesti usmena rasprava | Službenik nema pravo na branitelja || Službenik ima pravo na branitelja, a sindikalni predstavnik ima isti položaj.
+P| Spojite kaznu s vrstom povrede. | Pisana opomena = laka povreda ; Novčana kazna do 10 % plaće = laka povreda ; Novčana kazna 10–20 % plaće 1–6 mjeseci = teška povreda ; Prestanak državne službe = teška povreda ; Premještaj na drugo mjesto iste razine = teška povreda || Kazne za lake i teške povrede.
+S| Koliko dugo službenik ne može napredovati nakon utvrđene teške povrede? | *Dvije godine | Godinu dana | Šest mjeseci | Pet godina || Rok teče od izvršnosti rješenja.
+T| Ako službenik u godini dana od izvršnosti rješenja o teškoj povredi počini novu tešku povredu, služba mu prestaje po sili zakona. | T || Prestaje danom izvršnosti rješenja o novoj povredi.
+S| Pri kojoj se razini alkohola službenik smatra pod utjecajem alkohola? | *0,05 g/kg ili više | 0,5 g/kg ili više | 0,2 g/kg ili više | 1,0 g/kg ili više || Prag je 0,05 g/kg.
+T| Obavljanje djelatnosti suprotne poslovima radnog mjesta bez odobrenja čelnika je laka povreda. | N || To je teška povreda.
