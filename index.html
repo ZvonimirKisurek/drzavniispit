@@ -76,6 +76,19 @@ select.ok{border-color:var(--ok);background:var(--ok-soft)}select.bad{border-col
 .big{font:800 2.4rem var(--f-display)}
 .confirm{border:1px solid var(--bad);background:var(--bad-soft);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:8px}
 table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}td,th{padding:6px;border-bottom:1px solid var(--line);text-align:left}
+.tip{border:1px dashed var(--warn);background:var(--warn-soft);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;font-size:.93rem}
+.tip .mono{color:var(--warn)}
+.msgs{display:flex;flex-direction:column;gap:6px;text-align:left;width:100%}
+.msg{border-left:3px solid var(--line);padding:6px 10px;border-radius:0 8px 8px 0;background:var(--bg);font-size:.95rem}
+.msg.up{border-color:var(--ok)}.msg.down{border-color:var(--bad)}.msg.star{border-color:var(--warn);font-weight:600}
+.banner{border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.banner.ok{background:var(--ok-soft);border:1px solid var(--ok)}.banner.bad{background:var(--bad-soft);border:1px solid var(--bad)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:2px}
+.tile b{font:800 1.4rem var(--f-display)}.tile span{font-size:.8rem;color:var(--muted)}
+.gchips{display:flex;gap:3px;flex-wrap:wrap}.gchips i{font-style:normal;font:700 .75rem var(--f-mono);width:20px;height:20px;border-radius:5px;display:inline-flex;align-items:center;justify-content:center}
+.gchips i.g5,.gchips i.g4{background:var(--ok-soft);color:var(--ok)}.gchips i.g3{background:var(--warn-soft);color:var(--warn)}.gchips i.g2,.gchips i.g1{background:var(--bad-soft);color:var(--bad)}
+.tablewrap{overflow-x:auto}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head><body><div id="app"></div>
@@ -84,12 +97,14 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}td,t
 const BANK=JSON.parse(document.getElementById('bank').textContent);
 const BYID={};BANK.forEach(q=>BYID[q.id]=q);
 const GROUPS={};BANK.forEach(q=>(GROUPS[q.g]=GROUPS[q.g]||[]).push(q.id));
-const N=30,NEED=10,AVG=4.75,KEY='di_vjezbaonica_v2';
+const N=30,NEED=10,AVG=4.5,KEY='di_vjezbaonica_v2';
 const GL={5:'odličan',4:'vrlo dobar',3:'dobar',2:'dovoljan',1:'nedovoljan'};
 const TYPE={S:'Jedan točan odgovor',M:'Više točnih odgovora – djelomični bodovi',T:'Točno ili netočno',P:'Spajanje – djelomični bodovi',R:'Redoslijed – djelomični bodovi',F:'Dopunjavanje – djelomični bodovi'};
 const grade=p=>p>=27?5:p>=24?4:p>=21?3:p>=18?2:1;
-const blank=()=>({used:[],hist:[],cycles:[],cur:null,st:{},mist:{},bad:[]});
+const blank=()=>({used:[],hist:[],cycles:[],cur:null,st:{},mist:{},bad:[],log:[],wr:{}});
 let S=blank();try{const r=localStorage.getItem(KEY);if(r)S=Object.assign(blank(),JSON.parse(r))}catch(e){}
+if(!S.log.length&&S.hist.length)S.log=S.hist.map(h=>({s:h.s,g:h.g,t:h.t}));
+const fmt=x=>x.toFixed(2).replace('.',',');const AVGS=fmt(AVG).replace(/0$/,'');
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
@@ -148,25 +163,134 @@ function handler(getQ,getO,getA,setA,done){
     mv(k,d){const a=getA().slice();[a[k],a[k+d]]=[a[k+d],a[k]];a.touched=true;setA(a);render()}};
 }
 function verdict(sc){return sc>=1?'<span class="verdict ok">Točno – 1 bod</span>':sc>0?`<span class="verdict part">Djelomično – ${sc.toFixed(2).replace('.',',')} boda</span>`:'<span class="verdict bad">Netočno – 0 bodova</span>'}
-function stat(id,sc){const s=S.st[id]||(S.st[id]={n:0,p:0});s.n++;s.p+=sc;
+function stat(id,sc,a){const s=S.st[id]||(S.st[id]={n:0,p:0});s.n++;s.p+=sc;if(sc<1&&a!==undefined)S.wr[id]=ansText(BYID[id],a);
   if(sc<1)S.mist[id]=0;else if(id in S.mist){S.mist[id]++;if(S.mist[id]>=2)delete S.mist[id]}}
+
+/* ---------- savjeti za pamćenje ---------- */
+const TOPIC_TIP={
+'Hrvatski sabor':'Brojke Sabora: 100–160 zastupnika, mandat 4 godine, izbori u 60 dana, prvo zasjedanje u 20 dana. Redovno zasjeda 15.1.–15.7. i 15.9.–15.12. – pauze su ljeto i Božić.',
+'Referendum':'Tri broja: 10 % birača (Sabor MORA raspisati), 30 dana (Sabor može tražiti Ustavni sud), 6 mjeseci (isto pitanje ponovno). Savez s drugim državama uvijek ide na referendum.',
+'Savezi i Ustav':'Savez pokreću 1/3 zastupnika, Predsjednik ili Vlada; Sabor odlučuje 2/3, a referendum većinom izašlih. Promjenu Ustava predlaže 1/5 zastupnika. Savez je veći korak, pa traži veći dio Sabora.',
+'Pučki pravobranitelj':'Svi pravobranitelji: Sabor ih bira na 8 godina. Povjerenik za informiranje ima 5, Glavni državni odvjetnik 4. Pravobranitelj ne sudi – daje preporuke i upozorenja.',
+'Predsjednik Republike':'5 godina, najviše 2 mandata. Imunitet odobrava Ustavni sud, ne Sabor. Gotovo sve izvanredne ovlasti idu uz supotpis predsjednika Vlade.',
+'Vlada RH (Ustav)':'Mandatar ima 30 + najviše još 30 dana. Nepovjerenje pokreće 1/5, interpelaciju 1/10 – rušenje Vlade traži više potpisa od same rasprave. Glasovanje: ne prije 7 dana, najkasnije u 30.',
+'Sudbena vlast i DORH':'DSV = 11 = 7 sudaca + 2 profesora + 2 zastupnika. Sudac radi do 70. Predsjednika Vrhovnog suda bira Sabor na prijedlog Predsjednika, Glavnog državnog odvjetnika Sabor na prijedlog Vlade – oba na 4 godine.',
+'Lokalna samouprava – ustroj':'Grad: više od 10.000, veliki grad: više od 35.000 (50.000 je uvijek zamka). Lokalno je ono »blizu kuće« (djeca, komunalno, primarna zdravstvena), regionalno su »mreže i razvoj« (mreža ustanova, gospodarstvo, promet).',
+'Statut i Grad Zagreb':'Statut – zapamti MDS: Mjesna samouprava, Djelokrug i obilježja, javne Službe. U Zagrebu koordinatora određuje gradonačelnik.',
+'Proračun i prihodi JLP(R)S':'Kalendar proračuna: prijedlog do 15.11., donošenje do 31.12., Ministarstvu financija u 15 dana, privremeno financiranje najviše 3 mjeseca. Fondovi EU nisu na popisu prihoda jedinice.',
+'Tijela JLP(R)S':'Vijećnika ima od 7 do 47, uvijek neparno. Zamjenici: 2 za grad iznad 100.000 ili županiju iznad 250.000, 0 ispod 10.000 stanovnika. Izvršno tijelo raspolaže imovinom do 0,5 % prihoda.',
+'Mandat vijećnika i lokalni izbori':'Izbori treće nedjelje u svibnju svake 4. godine, prag 5 %, prijevremeni u 90 dana, liste se objavljuju u 48 sati. Mirovanje mandata najmanje 6 mjeseci.',
+'Opoziv i zamjenici':'Opoziv samo referendumom. Predlaže 20 % birača ili 2/3 vijećnika. Uspjeh = većina glasova i barem 1/3 upisanih birača. Ne smije se u prvih 6 mjeseci ni u godini izbora.',
+'EU – povijest i ugovori':'Redoslijed: Pariz 1951 → Rim 1957 → Spajanje 1965 → Jedinstveni akt 1987 → Maastricht 1992 → Amsterdam 1997 → Nica 2001 → Lisabon 2007. Maastricht rađa EU, Lisabon joj daje pravnu osobnost.',
+'EU – simboli, jezici, proširenja':'27 država, 24 jezika, 12 zvjezdica. Proširenja: 73 – 81 – 86 – 95 – 04 – 07 – 13. Samo su Hrvatska i Grčka ušle same.',
+'EU – institucije':'Komisija PREDLAŽE, Parlament i Vijeće EU DONOSE, Europsko vijeće USMJERAVA i ne donosi zakone. Vijeće EU su ministri, Europsko vijeće šefovi država i vlada. EP ima 720 zastupnika, Hrvatska 12.',
+'EU – tijela i ombudsman':'EGSO je glas civilnog društva, Odbor regija glas lokalne vlasti – oba imenuje Vijeće EU na 5 godina. Ombudsmana bira Europski parlament. EIB nije ESB.',
+'EU – tržište, Schengen, EMU, fondovi':'Četiri slobode: robe, osobe, usluge, kapital. Schengen 1985., Hrvatska 2023. – iste godine kad i euro. Konvergencija: deficit do 3 %, dug do 60 % BDP-a.',
+'EU – pristupanje RH':'Kopenhagen 1993 = politički, gospodarski, pravni kriterij; Madrid 1995 = administrativni. RH: zahtjev 2003., pregovori 2005.–2011., referendum 22.1.2012. (66,27 %), članica 1.7.2013.',
+'Ljudska prava u Ustavu':'Četiri prava koja se nikad ne ograničavaju: život, zabrana mučenja, zakonitost kazne, sloboda misli i vjere. Prigovor savjesti je političko, ne osobno pravo.',
+'Kazneni postupak':'Redoslijed naziva prati postupak: osumnjičenik (sumnja) → okrivljenik (postupak) → optuženik (optužnica).',
+'Biračko pravo i izbori':'Biračko pravo je opće i jednako, a glasuje se tajno – nikad »višestruko«. Aktivno pravo je birati, pasivno biti biran. Birači izvan RH biraju 3 zastupnika.',
+'Pristup informacijama (ZPPI)':'Ključni broj je 15: odluka u 15 dana, žalba u 15 dana. Povjerenika bira Sabor na 5 godina; protiv njegova rješenja ide samo upravni spor pred VUS-om.',
+'Zaštita osobnih podataka':'Voditelj ODREĐUJE svrhu, izvršitelj OBRAĐUJE za njega. Šest pravnih temelja, dovoljan je jedan. AZOP odgovara Saboru.',
+'Suzbijanje diskriminacije':'Test u dva koraka: (1) nepovoljniji položaj u usporedivoj situaciji, (2) jedna od 17 osnova. Ako osnove nema (ljubimac, visina, pismenost), to nije diskriminacija.',
+'Ravnopravnost spolova':'Ured radi politiku i ne prima prijave; Pravobraniteljica prima prijave. Pravobraniteljica se imenuje na 8 godina i Saboru izvješćuje najmanje jednom godišnje.',
+'Sustav državne uprave':'Zakon – uredba – pravilnik = Sabor – Vlada – čelnik. Dužnosnici upravljaju, službenici rade, namještenici pomažu.',
+'Povjeravanje poslova i ustanove':'Jedinicama samouprave poslovi se povjeravaju zbog prirode poslova i interesa građana. Pravnim osobama s javnim ovlastima zbog akata EU, manjih troškova ili posebnih stručnih uvjeta.',
+'Vlada RH (zakon i rad)':'2/3 članova Vlade traže »velike« prijedloge: Ustav, savez, granice, raspuštanje Sabora, referendum. Uži kabinet = predsjednik i potpredsjednici.',
+'Državni službenici – prijam':'Pravilo trojki: probni rad 3 mjeseca, rezultati testiranja vrijede 3 godine, državni ispit najviše 3 puta. Prijave na natječaj u 15 dana.',
+'Državni službenici – prava i dužnosti':'MORA odbiti nalog koji je nezakonit, kazneno djelo, prekršaj ili protivan Etičkom kodeksu i struci. MOŽE odbiti nalog koji traži više znanja, šteti njemu ili mu ugrožava zdravlje.',
+'Državni službenici – rad i plaća':'Plaća = koeficijent (uredba Vlade) × osnovica (kolektivni ugovor). Stanka 30 minuta, dnevni odmor 12 sati, tjedni 48.',
+'Ocjenjivanje i napredovanje':'Ocjene: izvrstan, naročito uspješan, uspješan, zadovoljava, ne zadovoljava. Jedina negativna je posljednja i znači prestanak službe. Ocjenjuje se do 28. veljače.',
+'Prestanak službe i disciplinska odgovornost':'Udaljenje: 60 %, odnosno 80 % ako uzdržava obitelj. Laka povreda: opomena ili do 10 %; teška: 10–20 % kroz 1–6 mjeseci, premještaj ili prestanak. Nakon teške povrede 2 godine nema napredovanja.',
+'Opća načela državne uprave':'Tijelo samo pribavlja podatke iz službenih evidencija – ne traži ih od građana. Štetu od nezakonitog rada plaća Republika Hrvatska.',
+'Uredsko poslovanje':'Brojčana oznaka = KLASA + URBROJ. Akt se evidentira datumom nastanka, podnesak datumom primitka. U rad ide istog ili najkasnije sljedećeg radnog dana.',
+'Natpisne ploče, zaglavlja, pečat':'Državna uprava desno, jedinice samouprave lijevo. Ploča 60 × 40 cm, mjesni odbor 45 × 25. Pečat ima 38 mm; pečat je od gume (otiskuje), žig od metala (utiskuje).',
+'Upravne pristojbe':'Obveza nastaje predajom zahtjeva. Povrat se traži u 90 dana. Djeca do 12 godina ne plaćaju vizu. Stranci koji dolaze RADITI nisu oslobođeni.',
+'ZUP – opća pravila':'ZUP je opći propis i uvijek se primjenjuje. Tko o stvari odlučuje, nije stranka.',
+'ZUP – nadležnost':'Mjesna nadležnost: nekretnina → gdje se nalazi; djelatnost → sjedište; brod i zrakoplov → matična luka; ostalo → prebivalište. Dogovorom se nadležnost ne mijenja.',
+'ZUP – tijek postupka':'Na zahtjev stranke postupak počinje predajom urednog zahtjeva, po službenoj dužnosti prvom radnjom. Na predstavku: obavijest u 30 dana, prigovor u 8.',
+'Izvršnost i izvršenje':'Zastara izvršenja je 5 godina. Žalba na rješenje o izvršenju samo na vrijeme, mjesto i način – i ne odgađa izvršenje.',
+'Prigovor i obavijesti':'Obavijest u 15 dana; prigovor i odluka o prigovoru po 8 dana. Na pružatelja javnih usluga prigovor dok radnja traje, a odgovor u 30 dana.',
+'Upravni spor':'Tužba u 30 dana; kod šutnje uprave najranije 8 dana nakon proteka roka. VUS odlučuje u vijeću od 3 suca, o općim aktima od 5. ZUS ima 7 načela.'
+};
+const TRAPS=[
+[/interpelac|nepovjeren/i,'Zamka 1/10 i 1/5: interpelacija (samo rasprava) traži 1/10, nepovjerenje (rušenje Vlade) 1/5. Teža posljedica traži više potpisa.'],
+[/35\.000|10\.000 stan|veliki grad/i,'10.000 = grad, 35.000 = veliki grad. Ako vidiš 50.000, to je zamka.'],
+[/pravobranitelj|Povjerenik za informiranje/i,'Mandati: pravobranitelji 8 godina, Povjerenik za informiranje 5, Glavni državni odvjetnik 4.'],
+[/Europsko vijeće|Vijeće EU|Vijeće Europske unije|Vijeće Europe/,'Tri »vijeća«: Europsko vijeće = šefovi država i vlada (smjer), Vijeće EU = ministri (zakoni), Vijeće Europe = nije EU uopće (46 država).'],
+[/EIB|ESB|investicijsk|središnja banka/i,'ESB = euro i inflacija do 2 %, Frankfurt. EIB = krediti za projekte, vlasnici su države članice.'],
+[/Kopenha|Madrid/,'Kopenhagen = 3 kriterija (politički, gospodarski, pravni). Madrid = 4., administrativni.'],
+[/Maastricht|Lisabon|Nic[ae]|Amsterdam/,'Maastricht rađa EU, Amsterdam unosi Schengen u ugovor, Nica priprema veliko proširenje, Lisabon daje pravnu osobnost i obvezujuću Povelju.'],
+[/imunitet/i,'Tko odobrava pritvor: zastupnik – Sabor, Predsjednik RH – Ustavni sud, sudac – DSV. Iznimka svugdje: zatečen u djelu s kaznom većom od 5 godina.'],
+[/referendum/i,'Brojke referenduma: 10 % birača, 30 dana za Ustavni sud, 6 mjeseci do ponavljanja.'],
+[/organsk|manjin/i,'Samo prava nacionalnih manjina traže 2/3 svih zastupnika. Ostali organski zakoni i proračun traže većinu svih.'],
+[/osmi dan|osmoga|stupa(ju)? na snagu/i,'Osmi dan je »magični« rok: zakoni i provedbeni propisi stupaju na snagu osmi dan od objave.'],
+[/pečat|žig/i,'Guma otiskuje (pečat), metal utiskuje (žig). Standardni promjer je 38 mm.'],
+[/prigovor savjesti/i,'Prigovor savjesti je političko pravo, iako zvuči osobno.'],
+[/besplatn/i,'Besplatno je samo OBVEZNO obrazovanje. »Besplatno visoko obrazovanje« je zamka.'],
+[/probn/i,'Probni rad traje 3 mjeseca, nikad 2.'],
+[/presud|procesn/i,'Glavna stvar = presuda, procesna pitanja = rješenje.'],
+[/šutnj/i,'Šutnja uprave: tužba se podnosi najranije 8 dana nakon proteka roka za odluku.'],
+[/sukob nadležnosti/i,'Sukob nadležnosti: unutar uprave odlučuje tijelo drugog stupnja (ili tijelo za opću upravu); između tijela državne uprave i samouprave upravni sud. Žalbe nema.'],
+[/Schengen/,'Schengen: 1985., pet država osnivačica. Hrvatska od 1.1.2023., iste godine kad i euro.'],
+[/euro|konvergencij|deficit/i,'Pravilo 3 i 60: deficit do 3 % BDP-a, javni dug do 60 % BDP-a. Danska ispunjava uvjete, ali ne želi euro.'],
+[/grb|štit/i,'Grb: 25 polja, 5 štitova u kruni, izvornik u Saboru.'],
+[/Uži kabinet/i,'Uži kabinet = predsjednik Vlade i potpredsjednici. Njegove odluke potvrđuje iduća sjednica Vlade.'],
+[/sudbeno vijeće|DSV/,'DSV: 11 = 7 + 2 + 2. Ne bira predsjednika Vrhovnog suda.'],
+[/alkohol/i,'Prag je 0,05 g/kg – stroži nego u prometu.'],
+[/dopust|selidb|davanje krvi/i,'Plaćeni dopust: velike životne stvari 5 dana (brak, dijete, smrt užeg člana), selidba u drugo mjesto 4, teška bolest 3, krv i selidba u istom mjestu 2.'],
+[/povrat.*pristojb|pristojb.*povrat/i,'Povrat pristojbe traži se u roku od 90 dana.'],
+[/diskrimin/i,'Prvo pitaj: postoji li jedna od 17 zakonskih osnova? Ako ne postoji, nije diskriminacija, koliko god nepravedno zvučalo.'],
+[/zamjenik/i,'Zamjenici: ispod 10.000 stanovnika nema ih (imenuje se privremeni), do 100.000 jedan, iznad 100.000 (županija iznad 250.000) dva, a manjinski dodaje još jednog.']
+];
+function tipsFor(q){
+  const hay=[q.q,(q.o||[]).join(' '),(q.p||[]).flat().join(' '),(q.i||[]).join(' '),(q.b||[]).flat().join(' '),q.e].join(' ');
+  const t=[];TRAPS.forEach(([r,s])=>{if(t.length<2&&r.test(hay))t.push(s)});
+  return{topic:TOPIC_TIP[q.k]||'',traps:t};
+}
+function ansText(q,a){
+  if(a==null)return'bez odgovora';
+  if(q.t==='S')return q.o[a]??'bez odgovora';
+  if(q.t==='T')return a?'Točno':'Netočno';
+  if(q.t==='M')return a.length?a.map(i=>q.o[i]).join(' · '):'bez odgovora';
+  if(q.t==='P')return a.map((v,i)=>v<0?null:q.p[i][0]+' → '+q.p[v][1]).filter((x,i)=>x&&a[i]!==i).join(' · ')||'nepotpuno';
+  if(q.t==='R')return a.map(v=>q.i[v]).join(' → ');
+  if(q.t==='F')return a.map((v,i)=>v<0?'…':q.b[i][v]).join(' · ');
+  return'';
+}
+function corrText(q){
+  if(q.t==='S'||q.t==='M')return q.c.map(i=>q.o[i]).join(' · ');
+  if(q.t==='T')return q.a?'Točno':'Netočno';
+  if(q.t==='P')return q.p.map(p=>p[0]+' → '+p[1]).join(' · ');
+  if(q.t==='R')return q.i.join(' → ');
+  return q.b.map(b=>b[0]).join(' · ');
+}
+function tipBox(q,id,prevWrong){
+  const t=tipsFor(q),s=S.st[id],miss=s?Math.round(s.n-s.p):0;
+  let h='<div class="tip"><div class="mono">Savjet za pamćenje</div>';
+  if(prevWrong)h+=`<div class="tipline"><b>Prošli put si odgovorio:</b> ${esc(prevWrong)}</div>`;
+  if(miss>=2)h+=`<div class="tipline"><b>Ovo ti je bježalo ${miss} puta.</b> Pročitaj točan odgovor naglas i ponovi ga za minutu.</div>`;
+  t.traps.forEach(x=>h+=`<div class="tipline">${esc(x)}</div>`);
+  if(t.topic)h+=`<div class="tipline muted">${esc(q.k)}: ${esc(t.topic)}</div>`;
+  return h+'</div>';
+}
 
 /* ---------- početna ---------- */
 function cyc(){const h=S.hist,sum=h.reduce((a,x)=>a+x.g,0);return{n:h.length,sum,avg:h.length?sum/h.length:0,need:Math.ceil(AVG*NEED),max:sum+5*(NEED-h.length)}}
 function topicStats(){const t={};BANK.forEach(q=>{const o=t[q.k]||(t[q.k]={n:0,seen:0,p:0,c:0});o.n++;const s=S.st[q.id];if(s){o.seen++;o.p+=s.p;o.c+=s.n}});return t}
 function home(){
   const c=cyc(),free=Object.keys(GROUPS).filter(g=>!S.used.includes(g)).length,mist=Object.keys(S.mist).length;
-  const dead=c.n>0&&c.max<c.need;
+  
   return `<div class="sheet"><div class="mono">Ciklus ${S.cycles.length+1} · kviz ${Math.min(c.n+1,NEED)} od ${NEED}</div>
-  <h1>Prosjek ${c.n?c.avg.toFixed(2).replace('.',','):'–'} <span class="muted" style="font-size:1rem;font-weight:500">/ potrebno ${AVG.toString().replace('.',',')}</span></h1>
+  <h1>Prosjek ${c.n?fmt(c.avg):'–'} <span class="muted" style="font-size:1rem;font-weight:500">/ potrebno ${AVGS}</span></h1>
   <div class="cycle">${idx(NEED).map(i=>{const h=S.hist[i];return `<div class="${h?'g'+h.g:''}" title="${h?h.s.toFixed(1)+' bodova':''}">${h?h.g:''}</div>`}).join('')}</div>
-  <div class="muted" style="font-size:.92rem">${dead?`<b style="color:var(--bad)">Prosjek ${AVG.toString().replace('.',',')} više nije dostižan.</b> Završi ciklus ili ga resetiraj u postavkama.`:`Za prolaz treba zbroj ocjena najmanje ${c.need}. Sada imaš ${c.sum}, a najviše možeš doći do ${c.max}.`}</div></div>
+  <div class="muted" style="font-size:.92rem">Za prolaz treba zbroj ocjena najmanje ${c.need}. Sada imaš ${c.sum}, a najviše možeš doći do ${c.max}. ${c.n?`Smiješ još izgubiti <b>${c.max-c.need}</b> ${c.max-c.need===1?'bod':'boda'} ocjena.`:''}${homeRec()}</div></div>
   <div class="modes">
    <button class="mode main" onclick="startExam()"><b>Ispit · 30 pitanja</b><span>Ocjena 1–5 ulazi u prosjek. Objašnjenja dobivaš na kraju. Neiskorištenih skupina pitanja: ${free}.</span></button>
    <button class="mode" onclick="go('learn')"><b>Učenje</b><span>Odmah vidiš točan odgovor i objašnjenje. Biraš teme. Ne ulazi u ocjenu.</span></button>
    <button class="mode" onclick="startLearn('mist')" ${mist?'':'disabled'}><b>Moje greške · ${mist}</b><span>Pitanja na kojima si pogriješio. Pitanje nestaje nakon dva točna odgovora zaredom.</span></button>
   </div>
-  <div class="sheet"><h3>Kako se boduje</h3><div class="muted" style="font-size:.93rem">Svako pitanje nosi 1 bod. Kod pitanja s više točnih odgovora dobivaš razmjeran dio: svaki točno označen odgovor donosi dio boda, a svaki krivo označen jednom toliko oduzima (ne ispod nule). Kod spajanja, redoslijeda i dopunjavanja svaki točan dio donosi svoj udio boda. Ocjene: 27–30 = 5, 24–26,99 = 4, 21–23,99 = 3, 18–20,99 = 2, ispod 18 = 1. Nakon 10 kvizova prosjek mora biti najmanje 4,75, inače se ciklus poništava.</div></div>`;
+  <div class="sheet"><h3>Kako se boduje</h3><div class="muted" style="font-size:.93rem">Svako pitanje nosi 1 bod. Kod pitanja s više točnih odgovora dobivaš razmjeran dio: svaki točno označen odgovor donosi dio boda, a svaki krivo označen jednom toliko oduzima (ne ispod nule). Kod spajanja, redoslijeda i dopunjavanja svaki točan dio donosi svoj udio boda. Ocjene: 27–30 = 5, 24–26,99 = 4, 21–23,99 = 3, 18–20,99 = 2, ispod 18 = 1. Nakon 10 kvizova prosjek mora biti najmanje 4,5. Čim prosjek postane nedostižan, ciklus se sam arhivira i kreće novi – u Arhivi vidiš dokle si stigao i kako napreduješ.</div></div>`;
 }
 
 /* ---------- ispit ---------- */
@@ -196,24 +320,32 @@ function exJump(k){S.cur.i=k;S.cur.warn=0;save();render()}
 function finishExam(force){
   const c=S.cur,un=c.ids.filter(i=>!answered(BYID[i],c.a[i])).length;
   if(un&&!force){c.warn=un;render();return}
-  let pts=0;const det=c.ids.map(id=>{const sc=score(BYID[id],c.a[id]);pts+=sc;stat(id,sc);return{id,sc}});
+  let pts=0;const det=c.ids.map(id=>{const sc=score(BYID[id],c.a[id]);pts+=sc;stat(id,sc,c.a[id]);return{id,sc}});
   pts=Math.round(pts*100)/100;const g=grade(pts);
   c.ids.forEach(id=>{const gr=BYID[id].g;if(!S.used.includes(gr))S.used.push(gr)});
-  S.hist.push({s:pts,g,t:Date.now()});
-  R={pts,g,det,o:c.o,a:c.a};S.cur=null;save();view='res';render();
+  const prevLog=S.log.slice(),now=Date.now();
+  S.hist.push({s:pts,g,t:now});S.log.push({s:pts,g,t:now});
+  R={pts,g,det,o:c.o,a:c.a,msgs:quizMsgs(pts,g,prevLog),cn:S.hist.length};
+  const k=cyc();let end=null;
+  if(k.n>=NEED&&k.avg>=AVG-1e-9)end=true;else if(k.max<k.need)end=false;
+  if(end!==null){const arch=archive(end,now);R.ended=arch;R.cmsgs=cycleMsgs(arch)}
+  else R.run=runMsgs(k);
+  S.cur=null;save();view='res';render();
 }
 function result(){
   const c=cyc(),col=R.g>=4?'var(--ok)':R.g===3?'var(--warn)':'var(--bad)';
-  let end='';
-  if(c.n>=NEED){const ok=c.avg>=AVG-1e-9;end=`<div class="sheet" style="border-color:${ok?'var(--ok)':'var(--bad)'}"><h2 style="color:${ok?'var(--ok)':'var(--bad)'}">${ok?'Ciklus položen':'Ciklus nije položen'}</h2><div>Prosjek nakon ${NEED} kvizova: <b>${c.avg.toFixed(2).replace('.',',')}</b>. ${ok?'Spreman si za državni ispit.':'Ocjene se poništavaju i kreće novi ciklus. Pitanja se i dalje ne ponavljaju dok ne potrošiš bazu.'}</div><div><button class="btn p" onclick="endCycle(${ok})">${ok?'Zatvori ciklus':'Kreni ispočetka'}</button></div></div>`}
+  let end='';const E=R.ended;
+  if(E)end=`<div class="banner ${E.ok?'ok':'bad'}"><h2 style="color:${E.ok?'var(--ok)':'var(--bad)'}">${E.ok?'Čestitam – ciklus položen!':'Ciklus arhiviran, kreće novi'}</h2><div class="gchips">${E.grades.map(x=>`<i class="g${x}">${x}</i>`).join('')}</div><div class="msgs">${R.cmsgs.map(m=>`<div class="msg ${m[0]}">${m[1]}</div>`).join('')}</div><div class="row"><button class="btn p" onclick="go('arch')">Otvori arhivu</button></div></div>`;
+  const avgShow=E?E.avg:c.avg,cnShow=E?E.n:c.n;
   const wrong=R.det.filter(d=>d.sc<1).length;
-  return `<div class="sheet" style="align-items:center;text-align:center"><div class="mono">Rješenje o ocjeni · kviz ${c.n} od ${NEED}</div>
+  return `<div class="sheet" style="align-items:center;text-align:center"><div class="mono">Rješenje o ocjeni · kviz ${cnShow} od ${NEED}</div>
   <div class="stamp" style="--sc:${col}"><span class="g">${R.g}</span><span class="l">${GL[R.g]}</span></div>
   <div class="big">${R.pts.toFixed(2).replace('.',',')} <span class="muted" style="font-size:1.2rem">/ 30</span></div>
-  <div class="muted">Prosjek ciklusa: ${c.avg.toFixed(2).replace('.',',')} · za ponavljanje: ${wrong} pitanja</div>
+  <div class="muted">Prosjek ciklusa: ${fmt(avgShow)} · za ponavljanje: ${wrong} pitanja</div>
+  <div class="msgs">${R.msgs.concat(R.run||[]).map(m=>`<div class="msg ${m[0]}">${m[1]}</div>`).join('')}</div>
   <div class="row" style="justify-content:center"><button class="btn p" onclick="go('home')">Na početnu</button>${wrong?`<button class="btn" onclick="startLearn('mist')">Uvježbaj greške</button>`:''}</div></div>${end}
   <h2>Pregled s objašnjenjima</h2>
-  ${R.det.map((d,k)=>{const q=BYID[d.id];return `<div class="sheet"><div class="qhead"><span class="mono">${k+1}. · ${esc(q.k)}</span>${verdict(d.sc)}</div>${qView(q,R.o[d.id],R.a[d.id],true,'X')}<div class="expl">${esc(q.e)}</div><div><button class="btn" style="font-size:.85rem;padding:6px 10px" onclick="flag('${d.id}',this)">Prijavi kao loše pitanje</button></div></div>`}).join('')}`;
+  ${R.det.map((d,k)=>{const q=BYID[d.id];return `<div class="sheet"><div class="qhead"><span class="mono">${k+1}. · ${esc(q.k)}</span>${verdict(d.sc)}</div>${qView(q,R.o[d.id],R.a[d.id],true,'X')}<div class="expl">${esc(q.e)}</div>${d.sc<1?tipBox(q,d.id,''):''}<div><button class="btn" style="font-size:.85rem;padding:6px 10px" onclick="flag('${d.id}',this)">Prijavi kao loše pitanje</button></div></div>`}).join('')}`;
 }
 function endCycle(ok){S.cycles.push({avg:cyc().avg,ok,t:Date.now()});S.hist=[];save();go('home')}
 function flag(id,b){if(!S.bad.includes(id))S.bad.push(id);save();b.textContent='Izbačeno iz baze';b.disabled=true}
@@ -247,10 +379,10 @@ function learnQ(){
   return `<div class="sheet"><div class="qhead"><span class="mono">${L.mode==='mist'?'Greške':'Učenje'} · ${L.i+1}/${L.ids.length} · ${esc(q.k)}</span><span class="mono">Niz točnih: ${L.streak}</span></div>
   <div class="bar"><i style="width:${L.i/L.ids.length*100}%"></i></div>
   ${qView(q,L.o[id],L.a[id],L.chk,'LH')}
-  ${L.chk?`<div>${verdict(sc)}</div><div class="expl">${esc(q.e)}</div>`:''}
+  ${L.chk?`<div>${verdict(sc)}</div><div class="expl">${esc(q.e)}</div>${sc<1?tipBox(q,id,L.pw):''}`:''}
   <div class="row"><button class="btn" onclick="go('learn')">Prekini</button><span class="grow"></span>${L.chk?`<button class="btn p" onclick="lNext()">${L.i<L.ids.length-1?'Sljedeće pitanje →':'Završi sesiju'}</button>`:`<button class="btn p" onclick="lCheck()" ${answered(q,L.a[id])?'':'disabled'}>Provjeri</button>`}</div></div>`;
 }
-function lCheck(){const id=L.ids[L.i],sc=score(BYID[id],L.a[id]);L.chk=true;L.pts+=sc;if(sc>=1){L.streak++;L.best=Math.max(L.best,L.streak)}else L.streak=0;stat(id,sc);save();render()}
+function lCheck(){const id=L.ids[L.i],sc=score(BYID[id],L.a[id]);L.pw=S.wr[id]||'';L.chk=true;L.pts+=sc;if(sc>=1){L.streak++;L.best=Math.max(L.best,L.streak)}else L.streak=0;stat(id,sc,L.a[id]);save();render()}
 function lNext(){L.chk=false;L.i++;if(L.i>=L.ids.length){view='learnEnd'}render()}
 function learnEnd(){const pct=Math.round(L.pts/L.ids.length*100);return `<div class="sheet" style="text-align:center;align-items:center"><div class="mono">Sesija završena</div><div class="big">${pct}%</div><div class="muted">${L.pts.toFixed(1).replace('.',',')} od ${L.ids.length} bodova · najdulji niz točnih: ${L.best} · u greškama čeka: ${Object.keys(S.mist).length}</div><div class="row" style="justify-content:center"><button class="btn p" onclick="startLearn('${L.mode}')">Nova sesija</button><button class="btn" onclick="go('home')">Na početnu</button></div></div>`}
 
@@ -267,18 +399,81 @@ function base(){
 function settings(){
   return `<div class="sheet"><h2>Postavke</h2><div class="muted">Napredak se sprema samo u ovom pregledniku.</div>
   <table><tr><td>Odrađenih ciklusa</td><td>${S.cycles.length} (položenih ${S.cycles.filter(c=>c.ok).length})</td></tr><tr><td>Iskorištenih skupina pitanja</td><td>${S.used.length} od ${Object.keys(GROUPS).length}</td></tr><tr><td>Izbačenih pitanja</td><td>${S.bad.length}</td></tr></table>
-  ${S.cycles.length?`<h3>Prošli ciklusi</h3><table>${S.cycles.map((c,i)=>`<tr><td>${i+1}.</td><td>${new Date(c.t).toLocaleDateString('hr-HR')}</td><td>prosjek ${c.avg.toFixed(2).replace('.',',')}</td><td style="color:${c.ok?'var(--ok)':'var(--bad)'}">${c.ok?'položen':'poništen'}</td></tr>`).join('')}</table>`:''}
   <h3>Sigurnosna kopija</h3><div class="muted" style="font-size:.92rem">Spremi napredak u datoteku i učitaj ga na drugom uređaju ili pregledniku.</div><div class="row"><button class="btn" onclick="exportS()">Spremi napredak u datoteku</button><label class="btn" for="impf">Učitaj napredak iz datoteke</label><input id="impf" type="file" accept=".json,application/json" hidden onchange="importS(this.files[0])"></div><div id="impmsg" class="muted"></div><div class="row"><button class="btn" onclick="S.bad=[];save();render()">Vrati izbačena pitanja</button><button class="btn" onclick="confirmReset=true;render()">Obriši sav napredak</button></div>
   ${confirmReset?`<div class="confirm"><b>Brišu se ocjene, ciklusi, statistika i greške.</b><div class="row"><button class="btn" onclick="confirmReset=false;render()">Odustani</button><button class="btn p" onclick="S=blank();save();confirmReset=false;go('home')">Obriši</button></div></div>`:''}</div>`;
 }
 function exportS(){const b=new Blob([JSON.stringify({v:2,t:Date.now(),S})],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='drzavni-ispit-napredak-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove()}
 function importS(f){if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);const s=d.S||d;if(!Array.isArray(s.hist)||!s.st)throw 0;S=Object.assign(blank(),s);save();go('home')}catch(e){document.getElementById('impmsg').textContent='Datoteka nije ispravna sigurnosna kopija.'}};r.readAsText(f)}
+
+/* ---------- arhiva, rekordi, usporedbe ---------- */
+function aboveRun(gr){let s=0,k=0;for(const g of gr){s+=g;if(s/(k+1)>=AVG-1e-9)k++;else break}return k}
+function archive(ok,t){const h=S.hist,gr=h.map(x=>x.g),sum=gr.reduce((a,b)=>a+b,0);
+  const a={t,ok,n:h.length,avg:sum/h.length,grades:gr,pts:h.map(x=>x.s),above:aboveRun(gr)};
+  a.prev=S.cycles.slice();S.cycles.push(Object.assign({},a,{prev:undefined}));S.hist=[];return a}
+function cN(c){return c.n||(c.grades?c.grades.length:NEED)}
+function quizMsgs(p,g,prev){const m=[],P=prev.map(x=>x.s);
+  if(!P.length){m.push(['star','Prvi ispit u arhivi. Od sad pratim tvoje rekorde.']);return m}
+  const best=Math.max(...P),worst=Math.min(...P),last=P[P.length-1];
+  if(p>best)m.push(['star',`Novi osobni rekord! ${fmt(p)} bodova (prethodni najbolji: ${fmt(best)}).`]);
+  else if(p===best)m.push(['up',`Izjednačio si osobni rekord od ${fmt(best)} bodova.`]);
+  if(p<worst)m.push(['down',`Najslabiji ispit dosad (prethodno najslabiji: ${fmt(worst)}). Vrijedi proći greške prije sljedećeg.`]);
+  const l3=P.slice(-3);
+  if(l3.length===3&&p>Math.max(...l3))m.push(['up','Bolje od prethodna tri ispita.']);
+  else if(l3.length===3&&p<Math.min(...l3))m.push(['down','Slabije od prethodna tri ispita.']);
+  const d=p-last;if(Math.abs(d)>=.01)m.push([d>0?'up':'down',`${d>0?'+':'−'}${fmt(Math.abs(d))} boda u odnosu na prošli ispit.`]);
+  let st=g===5?1:0;if(st)for(let i=prev.length-1;i>=0&&prev[i].g===5;i--)st++;
+  if(st>=2)m.push(['star',`${st}. petica zaredom!`]);
+  const all=P.concat(p),av=all.reduce((a,b)=>a+b,0)/all.length;m.push(['',`Prosjek svih ${all.length} ispita: ${fmt(av)} bodova (ocjena ${grade(av)}).`]);
+  return m}
+function runMsgs(k){const m=[],prevMax=Math.max(0,...S.cycles.filter(c=>!c.ok).map(cN));
+  if(k.n>=2&&k.avg>=AVG-1e-9)m.push(['up',`Na kursu si: prosjek ciklusa ${fmt(k.avg)} drži ${AVGS} ili više.`]);
+  else if(k.n>=1&&k.avg<AVG)m.push(['down',`Prosjek ciklusa je ispod ${AVGS}. Smiješ izgubiti još ${k.max-k.need} ${k.max-k.need===1?'bod':'boda'} ocjena do kraja ciklusa.`]);
+  if(S.cycles.length&&k.n===prevMax+1&&prevMax>0)m.push(['star',`Najdalje dosad: ${k.n}. ispit u ciklusu (prije si najdalje stigao do ${prevMax}.).`]);
+  if(k.n===NEED-1)m.push(['star','Još samo jedan ispit do kraja ciklusa!']);
+  return m}
+function cycleMsgs(a){const m=[],P=a.prev,avs=P.map(c=>c.avg),reach=P.filter(c=>!c.ok).map(cN);
+  if(a.ok){m.push(['star',`Svih ${NEED} ispita s prosjekom ${fmt(a.avg)}. Ovo je razina za pravi državni ispit.`]);
+    const passed=P.filter(c=>c.ok).length;m.push(['up',passed?`Ovo ti je ${passed+1}. položeni ciklus.`:'Prvi položeni ciklus!'])}
+  else{m.push(['down',`Nakon ${a.n}. ispita prosjek ${AVGS} više nije bio dostižan, pa je ciklus arhiviran.`]);
+    m.push(['',`Doseg: ${a.n}. ispit. ${a.above===0?'Prosjek je od početka bio ispod '+AVGS+'.':(a.above===1?'Prvi ispit':a.above<5?'Prva '+a.above+' ispita':'Prvih '+a.above+' ispita')+' držao si prosjek '+AVGS+' ili više.'}`]);
+    if(reach.length){const mx=Math.max(...reach);m.push(a.n>mx?['star',`Najdalje što si ikad dogurao (prije: ${mx}. ispit).`]:a.n===mx?['up',`Izjednačen najdalji doseg (${mx}. ispit).`]:['',`Najdalje dosad: ${mx}. ispit.`])}}
+  if(avs.length){if(a.avg>Math.max(...avs))m.push(['star',`Najbolji prosjek ciklusa dosad: ${fmt(a.avg)}.`]);
+    else if(a.avg<Math.min(...avs))m.push(['down',`Najslabiji prosjek ciklusa dosad: ${fmt(a.avg)}.`]);
+    const l3=avs.slice(-3);if(l3.length===3&&a.avg>Math.max(...l3))m.push(['up','Bolji prosjek od prethodna tri ciklusa.'])}
+  return m}
+function homeRec(){const C=S.cycles;if(!C.length)return'';const pass=C.filter(c=>c.ok).length,mx=Math.max(...C.map(cN));
+  return ` <br>Arhiva: ${C.length} ${C.length===1?'ciklus':'ciklusa'}, položenih ${pass}, najdalji doseg ${mx}. ispit.`}
+function arch(){
+  const Lg=S.log,C=S.cycles;
+  if(!Lg.length)return `<div class="sheet"><h2>Arhiva</h2><div class="muted">Još nema riješenih ispita. Nakon prvog ispita ovdje vidiš rekorde, sve cikluse i analizu grešaka.</div></div>`;
+  const P=Lg.map(x=>x.s),best=Math.max(...P),worst=Math.min(...P),av=P.reduce((a,b)=>a+b,0)/P.length;
+  const avs=C.map(c=>c.avg),bestC=avs.length?Math.max(...avs):null,worstC=avs.length?Math.min(...avs):null;
+  const tiles=[[fmt(best),'najbolji ispit (bodovi)'],[fmt(worst),'najslabiji ispit'],[fmt(av),'prosjek svih '+P.length+' ispita'],[C.filter(c=>c.ok).length+' / '+C.length,'položenih ciklusa'],[C.length?Math.max(...C.map(cN))+'.':'–','najdalji doseg u ciklusu']];
+  const last=Lg.slice(-30),W=Math.max(1,last.length);
+  const bars=last.map((x,i)=>{const h=x.s/30*60;return `<rect x="${i*(300/W)+1}" y="${64-h}" width="${300/W-2}" height="${h}" rx="1.5" fill="${x.g>=4?'var(--ok)':x.g===3?'var(--warn)':'var(--bad)'}"><title>${fmt(x.s)}</title></rect>`}).join('');
+  const lineY=64-27/30*60;
+  const rows=C.map((c,i)=>({c,i})).reverse().map(({c,i})=>{const tags=[];if(c.avg===bestC&&C.length>1)tags.push('najbolji prosjek');if(c.avg===worstC&&C.length>1)tags.push('najslabiji prosjek');
+    return `<tr><td>${i+1}.</td><td>${new Date(c.t).toLocaleDateString('hr-HR')}</td><td><div class="gchips">${(c.grades||[]).map(x=>`<i class="g${x}">${x}</i>`).join('')}</div></td><td>${cN(c)}.</td><td>${fmt(c.avg)}</td><td style="color:${c.ok?'var(--ok)':'var(--bad)'}">${c.ok?'položen':'pao'}${tags.length?`<div class="pill">${tags.join(', ')}</div>`:''}</td></tr>`}).join('');
+  const cur=cyc();
+  return `<div class="sheet"><h2>Arhiva i rekordi</h2><div class="tiles">${tiles.map(x=>`<div class="tile"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}</div>
+  <div><div class="mono">Zadnjih ${last.length} ispita · crta = 27 bodova (petica)</div><svg viewBox="0 0 300 66" width="100%" style="max-width:100%;display:block" role="img" aria-label="Bodovi zadnjih ispita"><line x1="0" x2="300" y1="${lineY}" y2="${lineY}" stroke="var(--muted)" stroke-dasharray="3 3" stroke-width=".6"/>${bars}</svg></div></div>
+  <div class="sheet"><h3>Ciklusi</h3>${cur.n?`<div class="muted">Trenutni ciklus: ${cur.n}. ispit, prosjek ${fmt(cur.avg)}.</div>`:''}${C.length?`<div class="tablewrap"><table><tr><th>#</th><th>Datum</th><th>Ocjene</th><th>Doseg</th><th>Prosjek</th><th>Ishod</th></tr>${rows}</table></div>`:'<div class="muted">Još nijedan ciklus nije završen.</div>'}</div>
+  ${analysis()}`;
+}
+function analysis(){
+  const t=topicStats(),weak=Object.keys(t).filter(k=>t[k].c>=3).map(k=>({k,p:t[k].p/t[k].c,n:t[k].c})).sort((a,b)=>a.p-b.p).slice(0,4);
+  const miss=Object.keys(S.st).filter(id=>BYID[id]).map(id=>({id,m:S.st[id].n-S.st[id].p,n:S.st[id].n})).filter(x=>x.m>=0.5).sort((a,b)=>b.m-a.m||b.n-a.n).slice(0,8);
+  if(!weak.length&&!miss.length)return '';
+  return `<div class="sheet"><h3>Analiza grešaka</h3>
+  ${weak.length?`<div class="mono">Najslabije teme</div>${weak.map(w=>`<div class="tip" style="border-style:solid"><b>${esc(w.k)} · ${Math.round(w.p*100)} % točno (${w.n} odgovora)</b><span>${esc(TOPIC_TIP[w.k]||'')}</span></div>`).join('')}<div class="row"><button class="btn" onclick="startLearn('weak')">Vježbaj najslabije teme</button></div>`:''}
+  ${miss.length?`<div class="mono" style="margin-top:6px">Pitanja koja ti najčešće bježe</div>${miss.map(x=>{const q=BYID[x.id];return `<div class="sheet" style="gap:6px;padding:12px"><div class="qtext" style="font-size:.98rem">${q.t==='F'?esc(q.q).replace(/\{\}/g,'_____'):esc(q.q)}</div><div style="font-size:.9rem"><b style="color:var(--ok)">Točno:</b> ${esc(corrText(q))}</div>${S.wr[x.id]?`<div style="font-size:.9rem"><b style="color:var(--bad)">Tvoj zadnji krivi odgovor:</b> ${esc(S.wr[x.id])}</div>`:''}${tipBox(q,x.id,'')}</div>`}).join('')}<div class="row"><button class="btn p" onclick="startLearn('mist')" ${Object.keys(S.mist).length?'':'disabled'}>Uvježbaj greške</button></div>`:''}</div>`;
+}
 function go(v){view=v;confirmReset=false;render();window.scrollTo(0,0)}
 function render(){
-  const tab=v=>({home:'home',exam:'home',res:'home',learn:'learn',learnQ:'learn',learnEnd:'learn',base:'base',set:'set'})[v];
-  let h=`<nav class="tabs">${[['home','Ispit'],['learn','Učenje'],['base','Baza'],['set','Postavke']].map(([k,t])=>`<button class="${tab(view)===k?'on':''}" onclick="${k==='home'&&S.cur?"view='exam';render()":`go('${k}')`}">${t}</button>`).join('')}</nav>`;
+  const tab=v=>({home:'home',exam:'home',res:'home',learn:'learn',learnQ:'learn',learnEnd:'learn',arch:'arch',base:'base',set:'set'})[v];
+  let h=`<nav class="tabs">${[['home','Ispit'],['learn','Učenje'],['arch','Arhiva'],['base','Baza'],['set','Postavke']].map(([k,t])=>`<button class="${tab(view)===k?'on':''}" onclick="${k==='home'&&S.cur?"view='exam';render()":`go('${k}')`}">${t}</button>`).join('')}</nav>`;
   h+=view==='home'?(S.cur?`<div class="sheet"><b>Imaš nedovršen ispit (${S.cur.i+1}/${N}).</b><div class="row"><button class="btn p" onclick="view='exam';render()">Nastavi ispit</button></div></div>`:'')+home()
-    :view==='exam'?exam():view==='res'?result():view==='learn'?learnHome():view==='learnQ'?learnQ():view==='learnEnd'?learnEnd():view==='base'?base():settings();
+    :view==='exam'?exam():view==='res'?result():view==='learn'?learnHome():view==='learnQ'?learnQ():view==='learnEnd'?learnEnd():view==='base'?base():view==='arch'?arch():settings();
   document.getElementById('app').innerHTML=h;
 }
 if(S.cur)view='exam';
